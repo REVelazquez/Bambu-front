@@ -1,0 +1,36 @@
+.customImage {
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+}
+
+.whatsappIcon {
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 1% 2%;
+    margin-left: 6%;
+    border-radius: 10px;
+    background-color: #287525;
+}
+
+.linkedinIcon {
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 1% 2%;
+    margin-left: 6%;
+    border-radius: 10px;
+    background-color: #0077B5;
+}
+
+.instagramIcon {
+    font-size: 30px;
+    color: white;
+    padding: 1% 2%;
+    margin-left: 6%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #FCAF45, #833AB4);
+    border: 1px solid white;
+    /* Puedes ajustar el borde según sea necesario */
+}

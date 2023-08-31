@@ -20,8 +20,8 @@ const Home = () => {
         </div>
         <div className="w-[50%] flex items-center justify-end">
           <div style={{
-            width: '500px', 
-            height: '500px', 
+            width: '500px',
+            height: '500px',
             borderRadius: '50%',
             borderTopLeftRadius: '57%',
             borderTopRightRadius: '40%',

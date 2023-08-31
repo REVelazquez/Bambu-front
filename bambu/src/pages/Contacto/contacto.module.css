@@ -1,6 +1,6 @@
 .customImage {
     max-width: 100%;
-    max-height: 60%;
+    max-height: 600px;
     object-fit: cover;
 }
 

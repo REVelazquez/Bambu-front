@@ -2,7 +2,10 @@ const texts = {
     tittle1: 'Elevando PyMES y Emprendedores hacia el Éxito',
     tittle2: 'Sobre nosotros',
     tittle3: '¿Que nos hace destacar?',
-    description: 'Somos más que una empresa de consultoria y capacitación somos el viento fresco que impulsa a las PyMes y pequeños emprendedores a crecer y properar',
+    description: 'En el denso bosque empresarial, emerge una poderosa entidad: Bambú. Somos más que una empresa de consultoría y capacitación; somos el viento fresco que impulsa a las PyMES y pequeños emprendedores a crecer y prosperar.',
+
+    description2:'Nuestra misión es sencilla pero poderosa: nutrir el crecimiento. Con raíces profundas en el conocimiento del mercado actual, ofrecemos soluciones personalizadas que infunden vigor en cada rincón de tu negocio. A través de estrategias de consultoría y mentoría  meticulosamente diseñadas, desenredamos los desafíos y trazamos un camino claro hacia el éxito'
+    
 }
 const items = [
     {card:{id:1, front:'Experiencia Centrada en Resultados', back:'Nuestro equipo combina años de experiencia con una pasión ardiente por ver crecer a las PyMES. Cada recomendación y guía que ofrecemos está respaldada por un historial probado de éxitos'}},

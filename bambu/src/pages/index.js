@@ -3,7 +3,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <main className="w-full absolute top-12" style={{ fontFamily: 'Nunito Sans' }}>
+    <main className="w-full absolute top-12 h-screen" style={{ fontFamily: 'Nunito Sans', backgroundColor: '#F2EDDC' }}>
       <div className="flex-grow p-8 rounded-lg ml-10 mt-1">
         <h1 className="text-2xl font-bold mb-4 font-semibold text-green-700">¡Bienvenidos a Bambú!</h1>
         <p className="text-gray-700 mb-6 text-black font-semibold max-w-[50%] ml-0">

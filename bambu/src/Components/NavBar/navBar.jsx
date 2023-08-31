@@ -10,17 +10,13 @@ const Navbar = () => {
             <Head>
                 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet"></link>
             </Head>
-            <nav className="w-full fixed top-0 z-10" style={{ backgroundColor: "#F2EDDC", fontFamily: 'Nunito Sans' }}>
+            <nav className="w-full fixed top-0 z-10 bg-green-400 bg-opacity-70 backdrop-blur-sm" style={{ fontFamily: 'Nunito Sans' }}>
+
                 <div className="container mx-auto flex justify-center items-center py-5">
                     <Link href="/" style={{ paddingRight: "5%", marginLeft: "-10%" }}>
                         <Image src={logo} alt="Logo" width={120} height={40} className='rounded-md' />
                     </Link>
-                    <ul className="flex space-x-6">
-                        <li>
-                            <Link href="/Home/Inicio">
-                                <p className="text-black font-semibold p-1 hover:opacity-50">Home</p>
-                            </Link>
-                        </li>
+                    <ul className="flex space-x-12">
                         <li>
                             <Link href="/About/About">
                                 <p className="text-black font-semibold p-1 hover:opacity-50">About</p>

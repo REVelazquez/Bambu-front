@@ -1,27 +1,42 @@
 import React from 'react';
+import { texts, items } from '@/Assets/aboutText';
+import Card from '@/Components/NavBar/card';
 
-const AboutPage = () => {
+const About = () => {
+    
+    console.log(items);
   return (
-    <div>
-        <h1 class='m-8 font-bold' >Elevando PyMES y Emprendedores hacia el Éxito</h1>
-        
-        <div class='my-4 mx-4'>
+    <div className=' flex flex-col items-center mt-16'>
 
-        <h2 class='mx-4 font-semibold'>Sobre nosotros</h2>
-            <div class='flex flex-row'>
-                <span class="inline-flex space-x-1 w-64 flex-row text-justify">
-                    <p class='m-0'>Somos más que una empresa de consultoria y capacitación somos el viento fresco que impulsa a las PyMes y pequeños emprendedores a crecer y properar</p>
+
+        <h1 className='m-8 font-bold mt-4' >{texts.tittle1}</h1>
+        
+        <div className='my-4 mx-4'>
+
+        <h2 className='mx-4 font-semibold'>{texts.tittle2}</h2>
+            <div className='flex flex-row'>
+                <span className="inline-flex space-x-1 w-64 flex-row text-justify">
+                    <p className='m-0'>{texts.description}</p>
                 </span>
-                <img src='' alt='Equipo o Logo' class=' mx-8' />
+                <img src='' alt='Equipo o Logo' className=' mx-8' />
             </div>
         </div>
+        <div key='Destacar'>
 
-        <div>
-            <h2 class='mx-8'>¿Que nos hace destacar?</h2>
-            <div>
-                
+            <h2 key='Titulo 3' className='mx-8'>{texts.tittle3}</h2>
+            <div key='Cards Container' className='flex flex-row'>
+                {items?.map((item)=>{
+                    return(
+                        <Card 
+                        id={item.card.id}
+                        front={item.card.front}
+                        back={item.card.back} />
+                        )
+                    })}            
             </div>
         </div>
     </div>
   );
 };
+
+export default About

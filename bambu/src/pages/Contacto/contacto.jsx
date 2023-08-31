@@ -1,8 +1,6 @@
 import Image from "next/image";
 import ImagenContacto from "../../Assets/contacto.jpg";
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import styles from "./contacto.module.css"
 import { useForm, ValidationError } from '@formspree/react';
 import Head from "next/head";
@@ -22,10 +20,8 @@ const Contacto = () => {
         )
     }
     return (
-        <div className="flex flex-col h-screen">
-            <Head>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
-            </Head>
+        <div className="flex flex-col h-full">
+
             <Image
                 src={ImagenContacto}
                 alt="Contact Image"
@@ -45,7 +41,7 @@ const Contacto = () => {
                         <a href="" className={styles.linkedinIcon}>
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="" className={styles.instagramIcon}>
+                        <a href="https://instagram.com/cordobabambu?igshid=ZGUzMzM3NWJiOQ==" className={styles.instagramIcon}>
                             <i className="fab fa-instagram"></i>
                         </a>
                     </div>

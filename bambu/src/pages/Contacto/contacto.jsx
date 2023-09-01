@@ -29,7 +29,7 @@ const Contacto = () => {
                 layout="responsive"
             />
 
-            <div className="flex-grow flex bg-gray-200">
+            <div className="flex-grow flex">
                 <div className="w-1/2 p-8">
                     <h1 className="mb-4 text-center text-lg font-medium text-gray-800">
                         Contactate con nosotros
@@ -57,10 +57,10 @@ const Contacto = () => {
                     </div>
                 </div>
                 <div className="w-1/2 p-8">
-                    <h1 className="mb-4 text-xl font-medium text-gray-800">Escribenos! </h1>
+                    <h1 className="mb-4 text-3xl font-semibold text-gray-800">Escribenos! </h1>
                     <form
                         onSubmit={handleSubmit}
-                        className="max-w-3xl p-8 shadow-lg rounded-lg w-full bg-none"
+                        className="max-w-3xl p-8 shadow-xl rounded-lg w-full "
                     >
                         <div className="flex mb-6">
                             <div className="w-1/2 mr-2">

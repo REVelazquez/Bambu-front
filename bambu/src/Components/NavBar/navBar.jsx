@@ -18,7 +18,7 @@ const Navbar = () => {
                     </Link>
                     <ul className="flex space-x-12">
                         <li>
-                            <Link href="/About/About">
+                            <Link href="/About/about">
                                 <p className="text-black font-semibold p-1 hover:opacity-50">About</p>
                             </Link>
                         </li>

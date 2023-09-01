@@ -41,7 +41,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="">
+                                    <Link href="/Capacitaciones/capacitaciones">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Capacitaciones</p>
                                     </Link>
                                 </li>

@@ -36,7 +36,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="">
+                                    <Link href="/Consultorias/consultorias">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Consultorias</p>
                                     </Link>
                                 </li>

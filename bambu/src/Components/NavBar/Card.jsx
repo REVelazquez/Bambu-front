@@ -1,5 +1,6 @@
 import { useState } from "react"
-const Card = ({id, front, back})=>{
+import Image from "next/image";
+const Card = ({id, image, front, back})=>{
     const [show, setShow]=useState(false)
     
     const handleMouseEnter = () => {
@@ -12,11 +13,15 @@ const Card = ({id, front, back})=>{
 
 
     return(
-        <div key={id} 
-        className="w-64 h-44 align-middle mx-4 my-4 transition-all duration-300 ease-in-out transform hover:scale-105" 
+        <div key={'a'+id} 
+        className="w-64 h-44 mx-4 my-4  transition-all duration-400 ease-in-out transform hover:scale-105" 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave} >
-            {show ?<h2 className="w-64 h-44  bg-green-300" >{back}</h2>: <h1 className="w-64 h-44  bg-green-600">{front}</h1> }
+            {show ? <span key={'c'+id} className="w-64 h-44  bg-green-500 flex rounded-md  border-solid border-green-900 border-4 items-center justify-center"><p key={'bt'+id} className="mx-4 text-sm">{back}</p></span>
+            :<div key={'b'+id} className="w-64 h-44 bg-green-400 flex rounded-md border-solid  border-green-900 border-4 items-center justify-center round-">
+              <Image key={'i'+id} src={image} className="w-16 h-16 ml-6 mr-2"/>
+              <h1 key={'ft'+id} className="w-40 mr-4 font-bold font-black">{front}</h1>
+              </div>}
             
             
         </div>

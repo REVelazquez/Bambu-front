@@ -14,5 +14,13 @@ module.exports = {
       },
     },
   },
+  theme: {
+    extend: {
+      colors: {
+        success: ' rgb(12, 124, 12)',
+        info: '#3498db'
+      },
+    },
+  },
   plugins: [],
 }

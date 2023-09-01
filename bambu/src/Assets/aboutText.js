@@ -10,7 +10,7 @@ const texts = {
     tittle4:'¡Conoce a nuestro equipo!',
     description: 'En el denso bosque empresarial, emerge una poderosa entidad: Bambú. Somos más que una empresa de consultoría y capacitación; somos el viento fresco que impulsa a las PyMES y pequeños emprendedores a crecer y prosperar.',
 
-    description2:'Nuestra misión es sencilla pero poderosa: nutrir el crecimiento. Con raíces profundas en el conocimiento del mercado actual, ofrecemos soluciones personalizadas que infunden vigor en cada rincón de tu negocio. A través de estrategias de consultoría y mentoría  meticulosamente diseñadas, desenredamos los desafíos y trazamos un camino claro hacia el éxito'
+    description2:'Nuestra misión es sencilla pero poderosa: nutrir el crecimiento. Con raíces profundas en el conocimiento del mercado actual, ofrecemos soluciones personalizadas que infunden vigor en cada rincón de tu negocio. A través de estrategias de consultoría y mentoría  meticulosamente diseñadas, desenredamos los desafíos y trazamos un camino claro hacia el éxito.'
     
 }
 const items = [

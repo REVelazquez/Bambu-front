@@ -14,7 +14,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const About = () => {
   return (
     <div key='Container A' className=' flex flex-col items-center w-full p-2 h-full' style={{backgroundColor:'#F2EDDC'}} >
-        <h1 className='font-bold mt-16 text-xl text-green-800' >{texts.tittle1}</h1>
+        <h1 className='font-bold mt-28 mb-12 text-xl text-green-800' >{texts.tittle1}</h1>
         
         <div className='my-4 mx-4'>
 
@@ -44,9 +44,9 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div key='Container destacar' className='items-center'> 
+        <div key='Container destacar' className='items-center mt-12'> 
 
-            <h2 key='Titulo 3' style={{marginLeft:'42%'}} className='font-semibold text-green-900 text-lg'>{texts.tittle3}</h2>
+            <h2 key='Titulo 3' style={{marginLeft:'42%'}} className='font-semibold text-green-900 text-lg mb-8 mt-12'>{texts.tittle3}</h2>
             <div key='Cards Container' className='flex flex-row justify-center'>
                 {items?.map((item)=>{
                     return(

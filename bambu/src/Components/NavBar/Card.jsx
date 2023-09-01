@@ -21,7 +21,7 @@ const Card = ({id, image, front, back})=>{
             :<div key={'b'+id} className="w-64 h-44 bg-green-400 flex rounded-md border-solid  border-green-900 border-4 items-center justify-center round-">
               <Image key={'i'+id} src={image} className="w-16 h-16 ml-6 mr-2"/>
               <h1 key={'ft'+id} className="w-40 mr-4 font-bold font-black">{front}</h1>
-              </div>}
+              </div>} 
             
             
         </div>

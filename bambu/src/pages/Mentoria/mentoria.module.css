@@ -1,0 +1,7 @@
+.container{
+    background-image: url(../../Assets/Mentor.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 600px;
+}

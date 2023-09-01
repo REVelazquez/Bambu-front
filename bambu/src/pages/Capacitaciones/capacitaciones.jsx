@@ -3,7 +3,7 @@ import styles from './capacitaciones.module.css'
 
 const Capacitaciones = () => {
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-full">
             <div className={styles.header}>
                 <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
                     <div className='top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/3 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full'>

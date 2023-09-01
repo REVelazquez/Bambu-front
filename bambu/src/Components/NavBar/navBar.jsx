@@ -31,12 +31,12 @@ const Navbar = () => {
                             </div>
                             <ul className="absolute hidden bg-white border rounded-md shadow-md group-hover:block">
                                 <li>
-                                    <Link href="">
+                                    <Link href="/Mentoria/mentoria">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Mentorias</p>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="">
+                                    <Link href="/Consultorias/consultorias">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Consultorias</p>
                                     </Link>
                                 </li>

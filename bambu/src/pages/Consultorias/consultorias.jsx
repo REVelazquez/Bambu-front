@@ -41,29 +41,31 @@ function Consultancy() {
 
   return (
     <div className="flex flex-col h-full">
-            <div className={styles.header}>
-                <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
-                    <div className='top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full'>
-                        <h1 className='text-center text-green-700 font-bold text-6xl mb-5 mx-auto'>Consultorías</h1>
-                        <p className='font-semibold ml-10'>El enfoque principal de nuestra consultoría es el análisis
-                  minucioso de tu empresa o proyecto emprendedor. Comenzaremos
-                  con un diagnóstico exhaustivo para detectar los puntos de
-                  dolor y las áreas de mejora potencial. Al entender a fondo tus
-                  necesidades y objetivos, podremos diseñar una estrategia
-                  personalizada que aborde tus desafíos específicos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className="flex space-x-6 mt-20">
-                
-                <div class="grid md:grid-cols-3 mx-auto">
-                {benefits.map((e, index) => (
-                  <div
-                    key={index}
-                    class="w-80  mx-3 my-3 shadow-[0_2px15px-3px_rgba(0,0,0,0.07),0_10px20px-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
-                  >
-                    {/* <a href="#!">
+      <div className={styles.header}>
+        <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
+          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full">
+            <h1 className="text-center text-green-700 font-bold text-6xl mb-5 mx-auto">
+              Consultorías
+            </h1>
+            <p className="font-semibold ml-10">
+              El enfoque principal de nuestra consultoría es el análisis
+              minucioso de tu empresa o proyecto emprendedor. Comenzaremos con
+              un diagnóstico exhaustivo para detectar los puntos de dolor y las
+              áreas de mejora potencial. Al entender a fondo tus necesidades y
+              objetivos, podremos diseñar una estrategia personalizada que
+              aborde tus desafíos específicos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex space-x-6 mt-20">
+        <div class="grid md:grid-cols-3 mx-auto">
+          {benefits.map((e, index) => (
+            <div
+              key={index}
+              class=" w-96 flex-1 text-center m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+            >
+              {/* <a href="#!">
                     <lord-icon
                             src={e.image}
                             trigger="hover"
@@ -71,19 +73,19 @@ function Consultancy() {
                             style={{ width: "35px", height: "35px" }}
                           ></lord-icon>
                     </a> */}
-                    <div class="p-6 mx-auto">
-                      <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                        {e.title}
-                      </h5>
-                      <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        {e.info}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-                </div>
+              <div class="p-6 mx-auto">
+                <h5 className="mb-2 text-3xl leading-tight text-green-700 font-bold">
+                  {e.title}
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  {e.info}
+                </p>
+              </div>
             </div>
+          ))}
         </div>
+      </div>
+    </div>
   );
 }
 

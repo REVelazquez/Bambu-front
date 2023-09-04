@@ -6,6 +6,7 @@ import duracion from "../../Assets/duracion.gif";
 import estrategia from "../../Assets/estrategia.gif";
 import inversion from "../../Assets/inversion.gif";
 import resultados from "../../Assets/resultados.gif";
+import ConsultancyCard from "@/Components/ConsultancyCard/ConsultancyCard";
 
 import styles from "./consultorias.module.css";
 
@@ -13,29 +14,29 @@ import styles from "./consultorias.module.css";
 function Consultancy() {
   const benefits = [
     {
-      title: "Consultoría Personalizada",
+      title: "Personalizada",
       info: "El enfoque principal de nuestra consultoría es el análisis minucioso de tu empresa o proyecto emprendedor. Comenzaremos con un diagnóstico exhaustivo para detectar los puntos de dolor y las áreas de mejora potencial. Al entender a fondo tus necesidades y objetivos, podremos diseñar una estrategia personalizada que aborde tus desafíos específicos.",
-      image: personalizada,
+      image: "https://cdn.lordicon.com/nocvdjmh.json",
     },
     {
-      title: "Duración y Frecuencia",
+      title: "Duración",
       info: "Es importante destacar que el proceso de consultoría es más intensivo y requiere un compromiso mínimo de 3 meses. Durante este período, nos reuniremos dos veces al mes en sesiones de 3 horas y media. Este enfoque intensivo nos permitirá profundizar en los problemas y trabajar estratégicamente para encontrar soluciones efectivas. La duración y frecuencia de las sesiones pueden ajustarse según tus requerimientos y la complejidad de los desafíos que enfrentes.",
-      image: duracion,
+      image: "https://cdn.lordicon.com/jaxtxypu.json",
     },
     {
-      title: "Trabajo Estratégico",
+      title: "Estratégica",
       info: "Una vez que hayamos identificado los puntos de dolor y establecido los objetivos, trabajaremos estratégicamente para implementar soluciones efectivas. Nuestro enfoque se basa en aprovechar tus fortalezas y recursos, así como en identificar nuevas oportunidades de crecimiento. A lo largo del proceso de consultoría, estaré disponible para brindarte asesoramiento continuo y acompañarte en la implementación de las estrategias diseñadas.",
-      image: estrategia,
+      image: "https://cdn.lordicon.com/oezixobx.json",
     },
     {
       title: "Resultados Tangibles",
       info: "Nuestro objetivo es lograr resultados tangibles y medibles para tu empresa o proyecto emprendedor. Durante el proceso de consultoría, te proporcionaremos un seguimiento constante de los avances y ajustaremos la estrategia según sea necesario para asegurar el éxito.",
-      image: resultados,
+      image: "https://cdn.lordicon.com/yqzmiobz.json",
     },
     {
       title: "Inversión en el Futuro",
       info: "Consideramos que la consultoría es una inversión en el futuro de tu negocio. Al trabajar juntos, podrás adquirir habilidades y conocimientos valiosos que te beneficiarán a largo plazo. Nuestro enfoque se centra en empoderarte para que puedas enfrentar futuros desafíos con confianza y tomar decisiones informadas que impulsen el crecimiento continuo de tu empresa",
-      image: inversion,
+      image: "https://cdn.lordicon.com/jffauosv.json",
     },
   ];
 
@@ -59,29 +60,9 @@ function Consultancy() {
         </div>
       </div>
       <div className="flex space-x-6 mt-20">
-        <div class="grid md:grid-cols-3 mx-auto">
+        <div className="grid md:grid-cols-3 mx-auto ">
           {benefits.map((e, index) => (
-            <div
-              key={index}
-              class=" w-96 flex-1 text-center m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
-            >
-              {/* <a href="#!">
-                    <lord-icon
-                            src={e.image}
-                            trigger="hover"
-                            colors="primary:#FFFFFF"
-                            style={{ width: "35px", height: "35px" }}
-                          ></lord-icon>
-                    </a> */}
-              <div class="p-6 mx-auto">
-                <h5 className="mb-2 text-3xl leading-tight text-green-700 font-bold">
-                  {e.title}
-                </h5>
-                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                  {e.info}
-                </p>
-              </div>
-            </div>
+            <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index}/>
           ))}
         </div>
       </div>

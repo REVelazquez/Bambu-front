@@ -7,8 +7,8 @@ const Mentoring = () => {
             <div className={style.container}>
                 <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
                     <div className='mb-10 bg-zinc-300 bg-opacity-70 backdrop-blur-full pr-28 pl-10 pt-20 pb-20 w-1/3 rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full'>
-                        <h1 className='text-center text-green-700 font-bold text-6xl mb-5'>Mentoría</h1>
-                        <p className='font-semibold'>Ofrecemos servicios de mentoring personalizados para ayudarte a alcanzar tus metas y
+                        <h1 className='text-center text-green-700 font-bold text-6xl mb-5'>Mentorías</h1>
+                        <p className='font-semibold ml-8'>Ofrecemos servicios de mentoring personalizados para ayudarte a alcanzar tus metas y
                         maximizar tu potencial. Nuestros programas de mentoría están diseñados para brindarte la
                         orientación y el apoyo necesarios para enfrentar desafíos profesionales y alcanzar el éxito
                         en tu vida laboral.

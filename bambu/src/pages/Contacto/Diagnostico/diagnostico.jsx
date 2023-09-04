@@ -1,4 +1,5 @@
 import styles from './diagnostico.module.css'
+import Link from 'next/link'
 
 const Diagnostico = () => {
     return (
@@ -21,10 +22,12 @@ const Diagnostico = () => {
                     <p className='mt-5 w-1/2 ml-auto mr-auto'> Al hacer clic en "Comienza Ahora", serás llevado directamente a nuestro formulario de diagnóstico. Con tus respuestas, estaremos listos para diseñar la mejor ruta para el éxito de tu emprendimiento.</p>
                 </div>
                 <div className='flex justify-center'>
-                    <button
-                        type="button"
-                        className="inline-block bg-info font-bold mt-5 rounded-full border-2 border-info px-6 pb-[6px] pt-2 text-md font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-info-600 hover:bg-opacity-80 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700"
-                        data-te-ripple-init>Comienza ahora</button>
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdNj0T9jEKUI9nNyUJKqrN10rFde6DA2X6W0EB3hBDbVo8lfg/viewform">
+                        <button
+                            type="button"
+                            className="inline-block bg-info font-bold mt-5 rounded-full border-2 border-info px-6 pb-[6px] pt-2 text-md font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-info-600 hover:bg-opacity-80 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700"
+                            data-te-ripple-init>Comienza ahora</button>
+                    </Link>
                 </div>
             </div>
         </div>

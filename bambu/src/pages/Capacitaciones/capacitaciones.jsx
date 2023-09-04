@@ -105,7 +105,7 @@ const Capacitaciones = () => {
                         <h5 className="mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
                             Duración
                             <lord-icon
-                                src="https://cdn.lordicon.com/qznlhdssjson"
+                                src="https://cdn.lordicon.com/qznlhdss.json"
                                 trigger="hover"
                                 colors="primary:#121331"
                                 style={{ width: "50px", height: "50px", padding: "10px" }}
@@ -123,11 +123,12 @@ const Capacitaciones = () => {
                         <h5 className="mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
                             Adaptable
                             <lord-icon
-                                src="https://cdnlordiconcom/fbdgkencjson"
+                                src="https://cdn.lordicon.com/fbdgkenc.json"
                                 trigger="hover"
                                 colors="primary:#121331"
-                                style={{ width: "50px", height: "50px", padding: "10px" }}
-                            ></lord-icon>
+                                style={{ width: "50px", height: "50px", padding: "10px" }}>
+
+                            </lord-icon>
                         </h5>
                         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
                             Entendemos que cada cliente tiene necesidades únicas, por lo que
@@ -141,11 +142,11 @@ const Capacitaciones = () => {
                         <h5 className="mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
                             Modalidades
                             <lord-icon
-                                src="https://cdnlordiconcom/vpcmkqztjson"
+                                src="https://cdn.lordicon.com/vpcmkqzt.json"
                                 trigger="hover"
                                 colors="primary:#121331"
-                                style={{ width: "50px", height: "50px", padding: "10px" }}
-                            ></lord-icon>
+                                style={{ width: "50px", height: "50px", padding: "10px" }}>
+                            </lord-icon>
                         </h5>
                         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
                             Puedes optar por la modalidad presencial para una experiencia en
@@ -155,7 +156,7 @@ const Capacitaciones = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-4xl font-bold text-lime-700 mt-10">
+            <div className="text-center text-4xl font-bold text-lime-700 mt-24">
                 <h1>Formaciones disponibles</h1>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">

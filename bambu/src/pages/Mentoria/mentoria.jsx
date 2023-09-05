@@ -49,8 +49,18 @@ const Mentoring = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
+      <div className="text-center">
+        <h1 className="mb-4 text-2xl font-bold mt-10">
+          ¿Interesado en nuestros servicios?
+      </h1>
+      <div className="inline-block mb-32 text-sky-600 rounded-full border-2 border-sky-600 px-6 pb-[6px] pt-2 text-md font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10">
+        <a href="https://api.whatsapp.com/send?phone=3516578866" target="_blank" rel="noopener noreferrer">Escribinos para saber los precios
+        <i className="fab fa-whatsapp ml-5 text-green-700 text-2xl"></i>
+        </a>
+        </div>
+        </div>
+        </div>
+        );
+      }
 
 export default Mentoring;

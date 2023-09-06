@@ -12,13 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-    },
-  },
-  theme: {
-    extend: {
       colors: {
-        success: ' rgb(12, 124, 12)',
-        info: '#3498db'
+        success: 'rgb(12, 124, 12)',
+        info: '#3498db',
       },
       animation: {
         'fade-down': 'fade-down 0.8s ease-out',
@@ -37,6 +33,5 @@ module.exports = {
       },
     },
   },
-
   plugins: [],
 }

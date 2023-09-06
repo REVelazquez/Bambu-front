@@ -44,11 +44,11 @@ function Consultancy() {
     <div className="flex flex-col h-full">
       <div className={styles.header}>
         <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
-          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full">
-            <h1 className="text-center text-green-700 font-bold text-6xl mb-5 mx-auto">
+          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full ">
+            <h1 className="text-center text-green-700 font-bold text-6xl mb-5 mx-auto animate-fade-down">
               Consultorías
             </h1>
-            <p className="font-semibold ml-10">
+            <p className="font-semibold ml-10 animate-fade-down">
               El enfoque principal de nuestra consultoría es el análisis
               minucioso de tu empresa o proyecto emprendedor. Comenzaremos con
               un diagnóstico exhaustivo para detectar los puntos de dolor y las
@@ -59,12 +59,20 @@ function Consultancy() {
           </div>
         </div>
       </div>
-      <div className="flex space-x-6 mt-20">
-        <div className="grid md:grid-cols-3 mx-auto ">
+      <div className="flex flex-row mt-20">
+        <div className="grid md:grid-cols-3 mx-auto animated animate__fadeIn ">
           {benefits.map((e, index) => (
-            <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index}/>
+            <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index} />
           ))}
         </div>
+      </div>
+      <div className="text-center mb-32">
+        <h1 className="mb-8  text-2xl font-bold mt-10">
+          ¿Quieres descubrir más acerca de las consultorías?
+        </h1>
+        <a href="/Contacto/contacto" className="text-white text-lg bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+          ¡Contáctanos para obtener más información!
+        </a>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './capacitaciones.module.css';
-import Acordeon from '@/Components/Acordeon/Acordeon';
+// import Acordeon from '@/Components/Acordeon/Acordeon';
 
 const Capacitaciones = () => {
 
@@ -161,7 +161,7 @@ const Capacitaciones = () => {
                 <h1>Formaciones disponibles</h1>
             </div>
             <div className="mx-8">
-            <Acordeon formaciones={formaciones} />
+                {/* <Acordeon formaciones={formaciones} /> */}
             </div>
 
 

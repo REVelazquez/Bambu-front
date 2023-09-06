@@ -14,7 +14,7 @@ const Contacto = () => {
                     <div className="lg:flex lg:justify-end lg:items-center h-full">
                         <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm lg:p-12 w-full lg:w-1/3 mr-5 rounded-tl-none rounded-tr-full rounded-bl-full rounded-br-none">
                             <h1 className='text-center font-bold text-4xl mb-5'>
-                                Conversa Con Nosotros <span className='text-lime-700'>¡Estamos Aquí Para Escucharte!</span>
+                                Conversá Con Nosotros <span className='text-lime-700'>¡Estamos Aquí Para Escucharte!</span>
                             </h1>
                         </div>
                     </div>
@@ -48,10 +48,10 @@ const Contacto = () => {
                         </div>
                     </div>
                     <div className="w-1/2 p-8 text-center">
-                        <div class="bg-white p-8 rounded-3xl shadow-md bg-sky-200 animated animate__fadeIn">
+                        <div class="bg-white p-8 rounded-3xl shadow-md bg-sky-200 animate-fade-down">
                             <h2 className="text-2xl font-semibold mb-4">¡Tu mensaje ha sido enviado con éxito!</h2>
                             <p className="text-gray-700">Gracias por ponerte en contacto con nosotros. Hemos recibido tu mensaje y nos pondremos en contacto contigo en breve. Valoramos tu interés en nuestra empresa y estamos ansiosos por ayudarte.</p>
-                            <p className="text-gray-700">Si tienes alguna pregunta adicional o necesitas asistencia inmediata, no dudes en llamarnos al <span className="text-green-700 hover:underline">
+                            <p className="text-gray-700">Si tienes alguna pregunta adicional o necesitas asistencia inmediata, no dudes en hablarnos al <span className="text-green-700 hover:underline">
                                 <a href="https://api.whatsapp.com/send?phone=3516578866" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i> 3516578866 </a></span></p>
                             <p className="text-gray-700">¡Ten un gran día!</p>
                         </div>
@@ -66,8 +66,8 @@ const Contacto = () => {
             <div className={styles.header}>
                 <div className="lg:flex lg:justify-end lg:items-center h-full">
                     <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm lg:p-12 w-full lg:w-1/3 mr-5 rounded-tl-none rounded-tr-full rounded-bl-full rounded-br-none">
-                        <h1 className='text-center font-bold text-4xl mb-5'>
-                            Conversa Con Nosotros <span className='text-lime-700'>¡Estamos Aquí Para Escucharte!</span>
+                        <h1 className='text-center font-bold text-4xl mb-5 animate-fade-down'>
+                            Conversá Con Nosotros <span className='text-lime-700'>¡Estamos Aquí Para Escucharte!</span>
                         </h1>
                     </div>
                 </div>
@@ -100,8 +100,8 @@ const Contacto = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="w-1/2 p-8">
-                    <h1 className="mb-4 text-3xl font-semibold text-gray-800">Escribenos! </h1>
+                <div className="w-1/2 p-8 animate-fade-down">
+                    <h1 className="mb-4 text-3xl font-semibold text-gray-800 ">Escríbenos! </h1>
                     <form
                         onSubmit={handleSubmit}
                         className="max-w-3xl p-8 shadow-xl rounded-lg w-full "

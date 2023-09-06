@@ -20,7 +20,23 @@ module.exports = {
         success: ' rgb(12, 124, 12)',
         info: '#3498db'
       },
+      animation: {
+        'fade-down': 'fade-down 0.8s ease-out',
+      },
+      keyframes: {
+        'fade-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-25px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
     },
   },
+
   plugins: [],
 }

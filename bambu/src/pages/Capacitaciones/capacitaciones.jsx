@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './capacitaciones.module.css';
+import Acordeon from '@/Components/Acordeon/Acordeon';
 
 const Capacitaciones = () => {
 
@@ -159,22 +160,8 @@ const Capacitaciones = () => {
             <div className="text-center text-4xl font-bold text-lime-700 mt-24">
                 <h1>Formaciones disponibles</h1>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
-                {formaciones.map((e, index) => (
-                    <div
-                        key={index}
-                        className="flex-1 max-w-md text-center m-5 p-10 bg-green-200 rounded-lg hover:bg-transparent shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 ease-in-out"
-                    >
-                        <div className="p-6">
-                            <h5 className="mb-2 text-2xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
-                                {e.title}
-                            </h5>
-                            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                                {e.description}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+            <div className="mx-8">
+            <Acordeon formaciones={formaciones} />
             </div>
 
 

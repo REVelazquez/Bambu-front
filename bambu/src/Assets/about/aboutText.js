@@ -2,7 +2,7 @@ import svg1 from './upIcon.svg'
 import svg2 from './keyIcon.svg'
 import svg3 from './downloadIcon.svg'
 import svg4 from './personIcon.svg'
-
+// objeto con titulos
 const texts = {
     tittle1: 'Elevando PyMES y Emprendedores hacia el Éxito',
     tittle2: 'Sobre nosotros',

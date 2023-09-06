@@ -62,9 +62,17 @@ function Consultancy() {
       <div className="flex space-x-6 mt-20">
         <div className="grid md:grid-cols-3 mx-auto ">
           {benefits.map((e, index) => (
-            <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index}/>
+            <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index} />
           ))}
         </div>
+      </div>
+      <div className="text-center mb-32">
+        <h1 className="mb-8  text-2xl font-bold mt-10">
+          ¿Quieres descubrir más acerca de las consultorías?
+        </h1>
+        <a href="/Contacto/contacto" className="text-white text-lg bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+          ¡Contáctanos para obtener más información!
+        </a>
       </div>
     </div>
   );

@@ -7,18 +7,18 @@ const Mentoring = () => {
       <div className={style.container}>
         <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
           <div className='mb-10 bg-zinc-300 bg-opacity-70 backdrop-blur-full pr-28 pl-10 pt-20 pb-20 w-1/3 rounded-tl-none rounded-tr-full rounded-bl-full rounded-br-none' style={{
-                    width:'35em', 
-                    marginLeft:'2em',
-                    borderTopRightRadius:'35%',
-                    borderTopLeftRadius:'65%',
-                    borderBottomLeftRadius:'45%',
-                    borderBottomRightRadius:'85%'
-                }}>
+            width: '35em',
+            marginLeft: '2em',
+            borderTopRightRadius: '35%',
+            borderTopLeftRadius: '65%',
+            borderBottomLeftRadius: '45%',
+            borderBottomRightRadius: '85%'
+          }}>
             <h1 className='text-center text-green-700 font-bold text-6xl mb-5'>Herramientas</h1>
             <p className='font-semibold'>En nuestro portfolio, encontrarás un amplio abanico de más de 50 documentos
-            descargables diseñados para facilitar tu desarrollo profesional y potenciar tu éxito. Estas
-            herramientas cubren diversas áreas y están diseñadas para ser útiles tanto para
-            emprendedores como para profesionales en diferentes etapas de sus carreras.
+              descargables diseñados para facilitar tu desarrollo profesional y potenciar tu éxito. Estas
+              herramientas cubren diversas áreas y están diseñadas para ser útiles tanto para
+              emprendedores como para profesionales en diferentes etapas de sus carreras.
             </p>
           </div>
         </div>
@@ -30,10 +30,10 @@ const Mentoring = () => {
               <i className="fas fa-edit mr-2 text-4xl"></i> Variedad de Recursos Descargables
             </h5>
             <p className="mb-4 mt-10 text-base text-neutral-600 text-sm">
-            Nuestra colección de herramientas descargables incluye diversos formatos y tipos de
-            documentos, que abarcan desde eBooks hasta hojas de cálculo Excel y plantillas listas para
-            usar. Cada recurso ha sido cuidadosamente elaborado y diseñado para brindarte un valor
-            significativo y ahorrarte tiempo y esfuerzo en tareas cotidianas.
+              Nuestra colección de herramientas descargables incluye diversos formatos y tipos de
+              documentos, que abarcan desde eBooks hasta hojas de cálculo Excel y plantillas listas para
+              usar. Cada recurso ha sido cuidadosamente elaborado y diseñado para brindarte un valor
+              significativo y ahorrarte tiempo y esfuerzo en tareas cotidianas.
             </p>
           </div>
         </div>
@@ -43,10 +43,10 @@ const Mentoring = () => {
               <i className="fas fa-pencil-alt mr-2 text-4xl"></i> Apoyo a Emprendedores y Profesionales
             </h5>
             <p className="mb-4 text-base text-neutral-600 text-sm">
-            Independientemente de si eres un emprendedor que busca guías prácticas para lanzar su
-            negocio o un profesional que necesita herramientas efectivas para optimizar su gestión,
-            nuestra selección de recursos descargables está pensada para satisfacer tus necesidades
-            específicas.
+              Independientemente de si eres un emprendedor que busca guías prácticas para lanzar su
+              negocio o un profesional que necesita herramientas efectivas para optimizar su gestión,
+              nuestra selección de recursos descargables está pensada para satisfacer tus necesidades
+              específicas.
             </p>
           </div>
         </div>
@@ -56,26 +56,26 @@ const Mentoring = () => {
               <i className="fas fa-pen mr-2 text-4xl"></i> Algunas herramientas descargables
             </h5>
             <p className="mb-4 text-base text-neutral-600 text-sm">
-            ➢ E-Books de Desarrollo Profesional: Guías detalladas y prácticas sobre temas
-            relevantes para el crecimiento profesional.
+              ➢ E-Books de Desarrollo Profesional: Guías detalladas y prácticas sobre temas
+              relevantes para el crecimiento profesional.
             </p>
             <p className="mb-4 text-base text-neutral-600 text-sm">
-            ➢ Plantillas de Plan de Negocios: Un esquema completo y estructurado para crear
-            un plan de negocios sólido.
+              ➢ Plantillas de Plan de Negocios: Un esquema completo y estructurado para crear
+              un plan de negocios sólido.
             </p>
             <p className="mb-4 text-base text-neutral-600 text-sm">
-            ➢ Hojas de Cálculo: Plantillas Excel para llevar un registro preciso de tus finanzas.
+              ➢ Hojas de Cálculo: Plantillas Excel para llevar un registro preciso de tus finanzas.
             </p>
           </div>
         </div>
       </div>
       <div className="text-center mb-32">
-      <h1 className="mb-8  text-2xl font-bold mt-10">
-            ¿Quieres descubrir más herramientas para aumentar tu productividad?
-            </h1>
-            <a href="/Contacto/contacto" className="text-white bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
-              ¡Contáctanos para obtener más información!
-              </a>
+        <h1 className="mb-8  text-2xl font-bold mt-10">
+          ¿Quieres descubrir más herramientas para aumentar tu productividad?
+        </h1>
+        <a href="/Contacto/contacto" className="text-white text-lg bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+          ¡Contáctanos para obtener más información!
+        </a>
       </div>
     </div>
   );

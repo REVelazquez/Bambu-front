@@ -1,19 +1,18 @@
-.section{
-    width:900px;
-    height:300px; 
-    display:flex;
-    margin: 1em;
+.section {
+    width: 900px;
+    height: 320px;
+    display: flex;
 }
 
-.sectionImg{
-    width:0px;
-    flex-grow:1;
-    object-fit:cover;
-    opacity:0.6;
-    transition:0.5s ease;
+.sectionImg {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: 0.5s ease;
 }
 
-.sectionImg:hover{
+.sectionImg:hover {
     cursor: crosshair;
     width: 300px;
     opacity: 1;

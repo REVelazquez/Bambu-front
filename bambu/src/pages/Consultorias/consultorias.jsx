@@ -44,11 +44,11 @@ function Consultancy() {
     <div className="flex flex-col h-full">
       <div className={styles.header}>
         <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
-          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full">
-            <h1 className="text-center text-green-700 font-bold text-6xl mb-5 mx-auto">
+          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full ">
+            <h1 className="text-center text-green-700 font-bold text-6xl mb-5 mx-auto animate-fade-down">
               Consultorías
             </h1>
-            <p className="font-semibold ml-10">
+            <p className="font-semibold ml-10 animate-fade-down">
               El enfoque principal de nuestra consultoría es el análisis
               minucioso de tu empresa o proyecto emprendedor. Comenzaremos con
               un diagnóstico exhaustivo para detectar los puntos de dolor y las
@@ -59,8 +59,8 @@ function Consultancy() {
           </div>
         </div>
       </div>
-      <div className="flex space-x-6 mt-20">
-        <div className="grid md:grid-cols-3 mx-auto ">
+      <div className="flex flex-row mt-20">
+        <div className="grid md:grid-cols-3 mx-auto animated animate__fadeIn ">
           {benefits.map((e, index) => (
             <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index} />
           ))}

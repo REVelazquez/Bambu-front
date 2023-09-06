@@ -7,11 +7,11 @@ const Calendario = () => {
             Solicita una fecha <span className='text-sky-700'>para el servicio pedido</span>
             </h1>
       <iframe
-        src="https://calendly.com/fervolpato1991/agenda-bambu"
-        width="80%"
-        height="800"
+        src="https://calendly.com/cordobabambu/bambu-consultas"
+        width="100%"
+        height="500"
         frameborder="0"
-        className="ml-40 pb-10"
+        className="pb-10"
       ></iframe>
     </div>
   );

@@ -10,9 +10,9 @@ const Mentoring = () => {
             width: '35em',
             // marginLeft: '2em',
             borderTopRightRadius: '65%',
-            borderTopLeftRadius: '15%',
+            borderTopLeftRadius: '65%',
             borderBottomLeftRadius: '65%',
-            borderBottomRightRadius: '80%'
+            borderBottomRightRadius: '65%'
           }}>
             <h1 className='text-center text-green-700 font-bold text-6xl mb-5 animate-fade-down '>Herramientas</h1>
             <p className='font-semibold animate-fade-down '>En nuestro portfolio, encontrarás un amplio abanico de más de 50 documentos

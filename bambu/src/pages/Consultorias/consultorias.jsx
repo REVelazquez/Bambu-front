@@ -10,7 +10,6 @@ import ConsultancyCard from "@/Components/ConsultancyCard/ConsultancyCard";
 
 import styles from "./consultorias.module.css";
 
-("client");
 function Consultancy() {
   const benefits = [
     {
@@ -43,9 +42,9 @@ function Consultancy() {
   return (
     <div className="flex flex-col h-full">
       <div className={styles.header}>
-        <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
-          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-28 pl-10 pt-20 pb-20 w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full ">
-            <h1 className="text-center text-green-700 font-bold text-6xl mb-5 mx-auto animate-fade-down">
+        <div className="mx-auto flex items-center justify-end mt-8 lg:mt-0 lg:mr-20 h-full">
+          <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm p-6 w-full lg:w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full ">
+            <h1 className="text-center text-green-700 font-bold text-4xl lg:text-6xl mb-5 mx-auto animate-fade-down">
               Consultorías
             </h1>
             <p className="font-semibold ml-10 animate-fade-down">
@@ -67,10 +66,10 @@ function Consultancy() {
         </div>
       </div>
       <div className="text-center mb-32">
-        <h1 className="mb-8  text-2xl font-bold mt-10">
+        <h1 className="mb-8  text-xl lg:text-2xl font-bold mt-10">
           ¿Quieres descubrir más acerca de las consultorías?
         </h1>
-        <a href="/Contacto/contacto" className="text-white text-lg bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+        <a href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
           ¡Contáctanos para obtener más información!
         </a>
       </div>

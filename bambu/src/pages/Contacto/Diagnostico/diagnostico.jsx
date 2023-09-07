@@ -7,15 +7,15 @@ const Diagnostico = () => {
             <div className={styles.header}>
                 <div className=" mx-auto flex items-center justify-end mt-8 mr-20 h-full ">
                     <div className='top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm pr-14 pl-10 pt-20 pb-20 w-1/3 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full'>
-                        <h1 className='text-center font-bold text-4xl mb-5'>
+                        <h1 className='text-center font-bold text-4xl mb-5 animate-fade-down'>
                             Encuentra Tu Camino <span className='text-lime-700'>Formulario de Diagnóstico</span>
                         </h1>
-                        <p className='font-semibold text-center'> Descubre Oportunidades Únicas con Nuestro Formulario de Diagnóstico
+                        <p className='font-semibold text-center animate-fade-down'> Descubre Oportunidades Únicas con Nuestro Formulario de Diagnóstico
                         </p>
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col justify-center m-10 p-10  '>
+            <div className='flex flex-col justify-center m-10 p-10 animated animate__fadeIn '>
                 <div className='text-center'>
                     <h2 className='text-5xl font-bold text-lime-700'>Tu viaje hacia soluciones personalizadas comienza aquí</h2>
                     <h4 className='font-bold mt-5 text-lg'>Completa nuestro breve formulario de diagnóstico para desbloquear nuevas oportunidades</h4>

@@ -50,12 +50,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mb-10 mt-36 ml-auto mr-auto'>
-        <h1 className='text-center text-4xl font-bold text-green-700'>NUESTROS SERVICIOS</h1>
-        <p className='text-center text-lg font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Te ayudamos a crecer</p>
-        <div className='flex flex-row justify-center'>
+      <div className='mb-10 mt-10 md:mt-36 mx-2 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto'>
+        <h1 className='text-center text-2xl md:text-4xl font-bold text-green-700'>NUESTROS SERVICIOS</h1>
+        <p className='text-center text-lg md:text-xl font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Te ayudamos a crecer</p>
+        <div className='flex flex-col md:flex-row justify-center'>
 
-          <div className={`w-96 h-[230px] mr-10 text-center p-10 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
+          <div className={`w-full md:w-70 h-[230px] md:mr-10 text-center p-4 md:p-18 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
             {
               isLoading ? (
                 <div className='w-full h-full mr-10 p-10'>
@@ -79,7 +79,7 @@ const Home = () => {
             }
           </div>
 
-          <div className={`w-96 h-[230px] mr-10 text-center p-10 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
+          <div className={`w-full md:w-70 h-[230px] md:mr-10 mt-4 md:mt-0 text-center p-4 md:p-18 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
             {
               isLoading ? (
                 <div className='w-full h-full mr-10  p-10'>
@@ -103,7 +103,7 @@ const Home = () => {
             }
           </div>
 
-          <div className={`w-96 h-[230px] mr-10 text-center p-10 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
+          <div className={`w-full md:w-70 h-[230px] md:mr-10 mt-4 md:mt-0 text-center p-4 md:p-18 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
             {
               isLoading ? (
                 <div className='w-full h-full mr-10  p-10'>
@@ -127,7 +127,7 @@ const Home = () => {
             }
           </div>
 
-          <div className={`w-96 h-[230px] mr-10 text-center p-10 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
+          <div className={`w-full md:w-70 h-[230px] mt-4 md:mt-0 text-center p-4 md:p-18 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
             {
               isLoading ? (
                 <div className='w-full h-full mr-10 p-10 '>
@@ -154,9 +154,10 @@ const Home = () => {
 
         </div>
       </div>
-      <div className="mt-20 mb-10 w-full">
-        <h1 className='text-center text-4xl text-green-700 font-bold' >LAS EMPRESAS QUE NOS RECOMIENDAN</h1>
-        <p className='text-center text-lg font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Confian en Nosotros</p>
+
+      <div className="mt-10 md:mt-20 mb-10 mx-2 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
+        <h1 className='text-center text-2xl md:text-4xl text-green-700 font-bold' >LAS EMPRESAS QUE NOS RECOMIENDAN</h1>
+        <p className='text-center text-lg md:text-xl font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Confían en Nosotros</p>
         {
           isLoading ? (
             <div className='w-full h-80'>

@@ -1,6 +1,5 @@
 .section {
     width: 800px;
-
     height: 320px;
     display: flex;
 }
@@ -23,15 +22,15 @@
 
 @media (max-width: 768px) {
     .section {
-        width: 350px;
-        height: 100px;
+        width: 355px;
+        height: 150px;
     }
 
     .sectionImg:hover {
         cursor: crosshair;
-        width: 100px;
+        width: 130px;
         opacity: 1;
-        filter: contrast(120%);
+        filter: contrast(110%);
     }
 }
 

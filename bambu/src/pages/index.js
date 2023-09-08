@@ -4,6 +4,7 @@ import ImagenHome from "../Assets/Landing.jpg";
 import Image from 'next/image';
 import { Carrousel } from '@/Components/Carrousel/Carrousel';
 import Loading from '@/Components/Loading/loading';
+import TestimoniosCarousel from '@/Components/CarrouselTestimonios/CarrouselTestimonios';
 
 const Home = () => {
 
@@ -66,7 +67,7 @@ const Home = () => {
         <p className='text-center text-lg md:text-xl font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Te ayudamos a crecer</p>
         <div className='flex flex-col md:flex-row justify-center'>
 
-          <div className={`w-full md:w-70 h-[230px] md:mr-10 text-center p-4 md:p-16 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
+          <div className={`w-full md:w-70 h-[230px] md:mr-10 mt-4 md:mt-0 text-center p-4 md:p-10 bg-transparent rounded-lg hover:bg-green-500 shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 hover:text-white ${isLoading ? '' : 'animated animate__fadeIn'}`}>
             {
               isLoading ? (
                 <div className='w-full h-full mr-10 p-10'>
@@ -164,6 +165,24 @@ const Home = () => {
 
 
         </div>
+      </div>
+
+      <div className="mt-10 md:mt-20 mb-20">
+
+        <h1 className='text-center text-2xl md:text-4xl text-green-700 font-bold' >TESTIMONIOS</h1>
+        <p className='text-center text-lg md:text-xl font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Clientes satisfechos, historias compartidas</p>
+        {
+          isLoading ? (
+            <div className='w-full h-96'>
+              <Loading />
+            </div>
+          ) : (
+            <div className={`${isLoading ? '' : 'animated animate__fadeIn'}`}>
+              <TestimoniosCarousel />
+            </div>
+          )
+        }
+
       </div>
 
       <div className="mt-10 md:mt-20 mb-10 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">

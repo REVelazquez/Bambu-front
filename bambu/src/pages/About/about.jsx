@@ -1,57 +1,63 @@
 import React from 'react';
 import { texts, items } from '@/Assets/about/aboutText';
 import Card from '@/Components/CardsAbout/Card';
-import imageDaniel from '@/Assets/about/daniel.png'
-import imageGabo from '@/Assets/about/gabo.png'
-import equipo from '@/Assets/about/equipo.jpg'
-import Image from 'next/image'
+import imageDaniel from '@/Assets/about/daniel.png';
+import imageGabo from '@/Assets/about/gabo.png';
+import equipo from '@/Assets/about/equipo.jpg';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-
-
-
 const About = () => {
-    return (
-        <div key='Container A' className=' flex flex-col items-center w-full p-2 h-full' style={{ backgroundColor: '#F2EDDC' }} >
-            <h1 className='font-bold mt-28 mb-12 text-4xl text-green-800 animate-fade-down' >{texts.tittle1}</h1>
+  return (
+    <div key='Container A' className=' flex flex-col place-items-center w-screen m-auto h-full' style={{ backgroundColor: '#F2EDDC' }} >
+            <h1 className='font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down' >{texts.tittle1}</h1>
 
-            <div className='my-4 mx-4 animate-fade-down'>
+            <div className=' flex flex-col md:flex-row my-4 mx-auto xl:ml-64 animate-fade-down'>
                 {/* Presentacion y bio de bambu */}
-                <div className='flex flex-row'>
+                <div className='flex flex-col md:flex-row items-center '>
+                
                     <span className="inline-flex  w-96 flex-col text-justify text-ellipsis">
                         <h2 className='mx-20 font-semibold text-3xl text-green-900 mt-8 '>{texts.tittle2}</h2>
                         <p className='m-0 mt-4 '>{texts.description}</p>
                         <p className='m-0 mt-4 '>{texts.description2}</p>
                     </span>
-                    <div key='image background' className='bg-green-700/50'
-                        style={{
-                            width: '39em',
-                            marginLeft: '2em',
-                            borderTopRightRadius: '55%',
-                            borderTopLeftRadius: '45%',
-                            borderBottomLeftRadius: '65%',
-                            borderBottomRightRadius: '35%'
-                        }}>
-                        <Image src={equipo} alt='Equipo o Logo'
-                            style={{
-                                width: '40em',
-                                marginLeft: '2em',
-                                borderTopLeftRadius: '65%',
-                                borderTopRightRadius: '25%',
-                                borderBottomRightRadius: '65%',
-                                borderBottomLeftRadius: '35%'
-                            }}
-                        />
-                    </div>
+
+  <div className="w-full sm:w-1/2 mt-6 sm:mt-0">
+  <div
+    key='image background'
+    className='mx-auto bg-green-700/50 sm:w-2/3 lg:w-3/4 xl:w-5/6 xl:ml-20 '
+    style={{
+      width: '100%',
+      borderTopRightRadius: '55%',
+      borderTopLeftRadius: '45%',
+      borderBottomLeftRadius: '65%',
+      borderBottomRightRadius: '35%',
+    }}
+  >
+    <Image
+      src={equipo}
+      alt='Equipo o Logo'
+      className='w-full'
+     
+      style={{
+        borderTopLeftRadius: '65%',
+        borderTopRightRadius: '25%',
+        borderBottomRightRadius: '65%',
+        borderBottomLeftRadius: '35%',
+      }}
+    />
+  </div>
+</div>
+                  
                 </div>
             </div>
 
             {/* Container para lo que hace destacar a Bambú */}
-            <div key='Container destacar' className='items-center mt-12 h-96 w-full'>
+            <div key='Container destacar' className='items-center mt-12 h-96 w-full h-full'>
 
-                <h2 key='Titulo 3' style={{ marginLeft: '42%' }} className='font-semibold text-green-900 text-3xl mb-8 mt-12'>{texts.tittle3}</h2>
-                <div key='Cards Container' className='flex flex-row justify-center'>
+                <h2 key='Titulo 3' style={{ marginLeft: '1em' }} className='font-semibold text-green-900 text-3xl mb-8 mt-12'>{texts.tittle3}</h2>
+                <div key='Cards Container' className='flex flex-col md:flex-row justify-center'>
                     {items?.map((item) => {
                         return (
                             <Card
@@ -101,7 +107,8 @@ const About = () => {
 
 
         </div>
-    );
+   
+  );
 };
 
-export default About
+export default About;

@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+<<<<<<< HEAD
 import Image from "next/image";
 import bambu from '@/Assets/Bambúf.jpg'
+=======
+>>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
 
 const Acordeon = ({ formaciones }) => {
   const [activeItems, setActiveItems] = useState(new Array(formaciones.length).fill(false));
@@ -14,13 +17,19 @@ const Acordeon = ({ formaciones }) => {
 
   return (
     <section className="grid md:grid-cols-1 w-1/2 mx-auto animate__animated animate__fadeIn">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
       {formaciones.map((formacion, index) => (
         <section
           className={`flex flex-col md:flex-row mb-4 mr-4 ml-4 p-4 bg-transparent rounded-lg shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 ${activeItems[index] ? 'bg-green-300' : ''}`}
           key={index}
         >
+<<<<<<< HEAD
 
+=======
+>>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
           <div className="flex flex-col w-full">
             <div className="flex justify-between">
               <h2 className="text-xl font-semibold">{formacion.title}</h2>
@@ -50,4 +59,8 @@ const Acordeon = ({ formaciones }) => {
   );
 };
 
+<<<<<<< HEAD
 export default Acordeon;
+=======
+export default Acordeon;
+>>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2

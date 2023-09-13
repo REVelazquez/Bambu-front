@@ -4,7 +4,7 @@ import Style from './Carrousel.module.css'
 export const Carrousel = () => {
     return (
 
-        <div className='flex justify-center'>
+        <div className='flex justify-center h-full'>
             <section className={Style.section}>
                 <></>
                 <Image src={images.bP} className={Style.sectionImg} alt='bp logo' />
@@ -18,7 +18,6 @@ export const Carrousel = () => {
                 <Image src={images.sanDeLaCan} className={Style.sectionImg} alt='loteria logo' />
                 <Image src={images.sanDelSalvador} className={Style.sectionImg} alt='municipalidad logo' />
             </section>
-
         </div>
     )
 }

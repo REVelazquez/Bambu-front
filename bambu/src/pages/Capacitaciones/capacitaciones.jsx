@@ -160,10 +160,9 @@ const Capacitaciones = () => {
             <div className="text-center text-4xl font-bold text-lime-700 mt-24">
                 <h1>Formaciones disponibles</h1>
             </div>
-            <div className="mx-8">
-            <Acordeon formaciones={formaciones} />
+            <div className="mt-10 mb-10">
+                <Acordeon formaciones={formaciones} />
             </div>
-
 
         </div>
     );

@@ -56,9 +56,9 @@ const About = () => {
 
             {/* cultura organizacional */}
             <section className=''> 
-                <h1 className='ml-8 text-green-700 font-bold text-4xl lg:text-6xl mb-5 animate-fade-down'>{texts.tittle3}</h1>
-                <section className='flex flex-row align-center'>
-                <section className='ml-4 w-80'>
+                <h1 className='font-bold mt-28 mb-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down'>{texts.tittle3}</h1>
+                <section className='flex flex-row align-center p-16'>
+                <section className="flex-1 text-center m-6 p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
                     <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-5 animate-fade-down'>
                         {texts.subtittle1}
                     </h3>
@@ -66,8 +66,8 @@ const About = () => {
                         {texts.visionDesc}
                     </p>
                 </section>
-                <section className='ml-4 w-80'>
-                <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-5 animate-fade-down'>
+                <section className="flex-1 text-center m-6 p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
+                <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-4 animate-fade-down'>
                         {texts.subtittle2}
                     </h3>
                     <p className='font-semibold animate-fade-down'>
@@ -76,10 +76,10 @@ const About = () => {
                 </section>
                 </section>               
                 <span className='ml-8'>
-                <h3 className='ml-12 text-green-700 font-bold text-l lg:text-2xl mb-5 animate-fade-down'>
+                <h3 className='font-bold mt-28 mb-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800'>
                         {texts.subtittle3}
                     </h3>
-                    <p className='ml-8 font-semibold animate-fade-down'>
+                    <p className='flex flex-col pb-12 md:flex-row justify-center font-semibold animate-fade-down'>
                         {texts.valoresDesc}
                     </p>
                 </span>
@@ -87,7 +87,7 @@ const About = () => {
             </section>
             {/* Container para lo que hace destacar a Bambú */}
             <div key='Container destacar' className='items-center mt-12 h-96 w-full h-full'>
-                <h2 key='Titulo 4' style={{ marginLeft: '1em' }} className='font-semibold text-green-900 text-3xl mb-8 mt-12'>{texts.tittle4}</h2>
+                <h2 key='Titulo 4' style={{ marginLeft: '1em' }} className='font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800'>{texts.tittle4}</h2>
                 
                 <div key='Cards Container' className='flex flex-col md:flex-row justify-center'>
                     {items?.map((item) => {

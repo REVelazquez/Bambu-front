@@ -7,10 +7,11 @@ import equipo from '@/Assets/about/equipo.jpg';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import AcordeonValores from '@/Components/AcordeonValores/AcordeonValores';
 
 const About = () => {
     return (
-        <div key='Container A' className=' flex flex-col place-items-center w-screen m-auto h-full' style={{ backgroundColor: '#F2EDDC' }} >
+        <div key='Container A' className=' flex flex-col place-items-center w-full m-auto h-full' style={{ backgroundColor: '#F2EDDC' }} >
             <h1 className='font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down' >{texts.tittle1}</h1>
 
             <div className=' flex flex-col md:flex-row my-4 mx-auto xl:ml-64 animate-fade-down'>
@@ -53,10 +54,44 @@ const About = () => {
                 </div>
             </div>
 
+            {/* cultura organizacional */}
+            <section>
+                <h1 className='font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down' >{texts.tittle3}</h1>
+                <section className='flex flex-col lg:flex-row mt-10'>
+                    <section className="flex-1 text-center m-5 p-6 bg-transparent rounded-lg hover:bg-green-100 shadow-md lg:shadow-lg dark:bg-neutral-700">
+                        <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-5 animate-fade-down'>
+                            {texts.subtittle1}
+                        </h3>
+                        <p className='font-semibold animate-fade-down'>
+                            {texts.visionDesc}
+                        </p>
+                    </section>
+                    <section className="flex-1 text-center m-5 p-6 bg-transparent rounded-lg hover:bg-green-100 shadow-md lg:shadow-lg dark:bg-neutral-700">
+                        <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-5 animate-fade-down'>
+                            {texts.subtittle2}
+                        </h3>
+                        <p className='font-semibold animate-fade-down'>
+                            {texts.misionDesc}
+                        </p>
+                    </section>
+                </section>
+                <div>
+                    <h3 className=' text-center text-green-700 font-bold lg:text-2xl mb-5 animate-fade-down'>
+                        {texts.subtittle3}
+                    </h3>
+                    <p className='text-center mb-10 font-semibold animate-fade-down'>
+                        {texts.valoresDesc}
+                    </p>
+                </div>
+                <div className='mt-10 mb-10'>
+                    <AcordeonValores />
+                </div>
+            </section>
+
             {/* Container para lo que hace destacar a Bambú */}
             <div key='Container destacar' className='items-center mt-12 h-96 w-full h-full'>
+                <h1 className='font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down' >{texts.tittle4}</h1>
 
-                <h2 key='Titulo 3' style={{ marginLeft: '1em' }} className='font-semibold text-green-900 text-center text-3xl mb-8 mt-12'>{texts.tittle3}</h2>
                 <div key='Cards Container' className='flex flex-col md:flex-row justify-center'>
                     {items?.map((item) => {
                         return (
@@ -71,9 +106,9 @@ const About = () => {
             </div>
 
             {/* container equipo de */}
-            <div key='Container equipo' className='mt-6'>
-                <h1 className='font-semibold text-green-900 text-3xl text-center w-90' >{texts.tittle4}</h1>
-                <div className='flex flex-row m-0 '>
+            <div key='Container equipo' className='mt-12 mb-24'>
+                <h1 className='font-semibold text-green-900 text-3xl ml-6 w-90' >{texts.tittle5}</h1>
+                <div className='flex flex-row m-0'>
                     <div className='place-items-center bg-green-500 m-4 w-44 h-44 rounded-xl border-8 border-green-800'>
                         <div key='container equipo 1' className='ml-6 flex flex-row'>
 
@@ -84,7 +119,7 @@ const About = () => {
                                 </div>
                             </a>
                         </div>
-                        <Image src={imageDaniel} className='w-32 h-28 ml-6' alt="" />
+                        <Image src={imageDaniel} alt={imageDaniel} className='w-32 h-28 ml-6' />
                     </div>
 
                     <div className='place-items-center bg-green-500 m-4 w-44 h-44 rounded-xl border-8 border-green-800'>
@@ -99,7 +134,7 @@ const About = () => {
                             </button>
 
                         </div>
-                        <Image src={imageGabo} className='w-28 h-28 ml-8 mb-0 mt-0' alt="" />
+                        <Image src={imageGabo} alt={imageGabo} className='w-28 h-28 ml-8 mb-0 mt-0' />
 
                     </div>
                 </div>

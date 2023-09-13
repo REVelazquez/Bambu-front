@@ -25,7 +25,7 @@ const Navbar = () => {
                     </Link>
                     <div className="hidden md:flex space-x-12">
                         <Link href="/About/about">
-                            <p className="text-black font-semibold p-1 hover:opacity-50">About</p>
+                            <p className="text-black font-semibold p-1 hover:opacity-50">Sobre nosotros</p>
                         </Link>
                         <div className="relative group">
                             <div className='flex flex-row p-1'>
@@ -61,7 +61,7 @@ const Navbar = () => {
                             <p className="text-black font-semibold p-1 hover:opacity-50">Contacto</p>
                         </Link>
                         <Link href="/Calendario/calendario">
-                            <p className="text-black font-semibold p-1 hover:opacity-50">Calendario</p>
+                            <p className="text-black font-semibold p-1 hover:opacity-50">Cita de Diagnostico</p>
                         </Link>
                     </div>
                     <div className="md:hidden">

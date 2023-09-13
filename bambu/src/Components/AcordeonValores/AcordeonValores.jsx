@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {valores} from '@/Assets/about/aboutText'
 
-const Acordeon = ({ formaciones }) => {
-  const [activeItems, setActiveItems] = useState(new Array(formaciones.length).fill(false));
+const AcordeonValores = () => {
+  const [activeItems, setActiveItems] = useState(new Array(valores.length).fill(false));
+
 
   const handleClick = (index) => {
     const newActiveItems = [...activeItems];
@@ -12,14 +13,14 @@ const Acordeon = ({ formaciones }) => {
 
   return (
     <section className="grid md:grid-cols-1 w-1/2 mx-auto animate__animated animate__fadeIn">
-      {formaciones.map((formacion, index) => (
+      {valores.map((valores, index) => (
         <section
           className={`flex flex-col md:flex-row mb-4 mr-4 ml-4 p-4 bg-transparent rounded-lg shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 ${activeItems[index] ? 'bg-green-300' : ''}`}
           key={index}
         >
           <div className="flex flex-col w-full">
             <div className="flex justify-between">
-              <h2 className="text-xl font-semibold">{formacion.title}</h2>
+              <h2 className="text-xl font-semibold">{valores.name}</h2>
               <button
                 onClick={() => handleClick(index)}
                 className="py-1 px-2 rounded-md bg-transparent text-white"
@@ -35,7 +36,7 @@ const Acordeon = ({ formaciones }) => {
               <div>
                 <hr className="w-full mx-auto mt-2 border-t-2 border-gray-200" />
                 <p className="w-full mx-auto mt-2 text-center text-lg animate__animated animate__fadeIn">
-                  {formacion.description}
+                  {valores.description}
                 </p>
               </div>
             )}
@@ -46,4 +47,4 @@ const Acordeon = ({ formaciones }) => {
   );
 };
 
-export default Acordeon;
+export default AcordeonValores;

@@ -1,77 +1,95 @@
 import React from 'react';
 import styles from './capacitaciones.module.css';
 import Acordeon from '@/Components/Acordeon/Acordeon';
+import { images } from '@/Assets/Capacitaciones';
 
 const Capacitaciones = () => {
 
     const formaciones = [
         {
             title: 'Gestión del Tiempo',
-            description: 'Optimiza tu productividad y eficiencia organizando eficazmente tus tareas y prioridades'
+            description: 'Optimiza tu productividad y eficiencia organizando eficazmente tus tareas y prioridades',
+            imagen: images.GestionDelTiempo
         },
         {
             title: '10 Pasos para Desarrollar tu Proyecto',
-            description: 'Aprende el proceso paso a paso para desarrollar y ejecutar tu proyecto con éxito'
+            description: 'Aprende el proceso paso a paso para desarrollar y ejecutar tu proyecto con éxito',
+            imagen: images.DesarrollarProyecto
         },
         {
             title: 'Inteligencia Emocional para Emprendedores',
-            description: 'Desarrolla habilidades emocionales clave para liderar con empatía y resolver conflictos de manera efectiva'
+            description: 'Desarrolla habilidades emocionales clave para liderar con empatía y resolver conflictos de manera efectiva',
+            imagen: images.inteligenciaEmocional
         },
         {
             title: 'OKR: Objetivos Ágiles y Estratégicos',
-            description: 'Domina la metodología OKR para establecer y alcanzar objetivos ambiciosos'
+            description: 'Domina la metodología OKR para establecer y alcanzar objetivos ambiciosos',
+            imagen: images.objetivosAgiles
         },
         {
             title: 'Comunicación Eficaz',
-            description: 'Mejora tus habilidades de comunicación verbal y no verbal para transmitir mensajes de manera clara y efectiva'
+            description: 'Mejora tus habilidades de comunicación verbal y no verbal para transmitir mensajes de manera clara y efectiva',
+            imagen: images.ComunicacionEficaz
         },
         {
             title: 'Herramientas Digitales para Docentes',
-            description: 'Descubre herramientas tecnológicas que enriquecerán tus habilidades de enseñanza'
+            description: 'Descubre herramientas tecnológicas que enriquecerán tus habilidades de enseñanza',
+            imagen: images.Docente
         },
         {
             title: 'Oratoria y Storytelling',
-            description: 'Aprende a cautivar a tu audiencia con técnicas de oratoria persuasiva y narración de historias impactantes'
+            description: 'Aprende a cautivar a tu audiencia con técnicas de oratoria persuasiva y narración de historias impactantes',
+            imagen: images.storytelling
         },
         {
             title: 'Atención al Cliente',
-            description: 'Desarrolla habilidades para brindar un servicio excepcional y generar lealtad en los clientes'
+            description: 'Desarrolla habilidades para brindar un servicio excepcional y generar lealtad en los clientes',
+            imagen: images.atencionAlCliente
         },
         {
             title: 'Pitch',
-            description: 'Domina la presentación concisa y convincente de tu idea o proyecto frente a inversionistas o clientes potenciales'
+            description: 'Domina la presentación concisa y convincente de tu idea o proyecto frente a inversionistas o clientes potenciales',
+            imagen: images.Pitch
         },
         {
             title: 'Feedback Efectivo',
-            description: 'Aprende a dar y recibir retroalimentación constructiva para fomentar el crecimiento profesional'
+            description: 'Aprende a dar y recibir retroalimentación constructiva para fomentar el crecimiento profesional',
+            imagen: images.Feedback
         },
         {
             title: 'Experiencia del Empleado',
-            description: 'Descubre cómo crear un entorno de trabajo positivo y motivador para tus colaboradores'
+            description: 'Descubre cómo crear un entorno de trabajo positivo y motivador para tus colaboradores',
+            imagen: images.Empleado
         },
         {
             title: 'Técnicas de Venta',
-            description: 'Desarrolla habilidades de ventas efectivas para aumentar tus resultados comerciales'
+            description: 'Desarrolla habilidades de ventas efectivas para aumentar tus resultados comerciales',
+            imagen: images.Ventas
         },
         {
             title: 'Team Building',
-            description: 'Fortalece el trabajo en equipo y promueve la colaboración y la sinergia entre los miembros de tu equipo'
+            description: 'Fortalece el trabajo en equipo y promueve la colaboración y la sinergia entre los miembros de tu equipo',
+            imagen: images.Team
         },
         {
             title: 'Aliados Digitales para Vender',
-            description: 'Aprende a aprovechar las herramientas digitales y las redes sociales para impulsar tus ventas'
+            description: 'Aprende a aprovechar las herramientas digitales y las redes sociales para impulsar tus ventas',
+            imagen: images.Redes
         },
         {
             title: 'Ikigai',
-            description: 'Descubre tu propósito y pasión personal para encontrar sentido y plenitud en tu vida profesional'
+            description: 'Descubre tu propósito y pasión personal para encontrar sentido y plenitud en tu vida profesional',
+            imagen: images.Ikigai
         },
         {
             title: 'Liderazgo y Gestión de Equipos',
-            description: 'Adquiere habilidades de liderazgo inspirador para guiar a tu equipo hacia el éxito'
+            description: 'Adquiere habilidades de liderazgo inspirador para guiar a tu equipo hacia el éxito',
+            imagen: images.Liderazgo
         },
         {
             title: 'Astrología para Vender',
-            description: 'Explora cómo la astrología puede influir en el comportamiento del cliente y mejorar tus estrategias de venta'
+            description: 'Explora cómo la astrología puede influir en el comportamiento del cliente y mejorar tus estrategias de venta',
+            imagen: images.Astrologia
         }
     ];
 
@@ -79,12 +97,15 @@ const Capacitaciones = () => {
     return (
         <div className="flex flex-col h-full">
             <div className={styles.header}>
-                <div className="lg:flex lg:justify-end lg:items-center h-full">
-                    <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm p-6 lg:p-24 w-full lg:w-1/2 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-full">
-                        <h1 className="text-center text-green-700 font-bold text-4xl lg:text-6xl mb-3 lg:mb-5">
+                <div className="mx-auto flex items-center justify-end mt-8 lg:mt-0 lg:mr-20 h-full">
+                    <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm p-12 w-full lg:w-1/2 
+  rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full 
+  lg:rounded-tl-full lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-full 
+  sm:m-4">
+                        <h1 className="text-center text-green-700 font-bold text-4xl lg:text-6xl mb-5 mx-auto animate-fade-down">
                             Capacitaciones
                         </h1>
-                        <p className="font-semibold text-sm lg:text-base">
+                        <p className="font-semibold ml-10 animate-fade-down">
                             Nuestros servicios de capacitación están diseñados para proporcionar
                             un aprendizaje significativo y práctico a individuos y equipos que
                             desean mejorar sus habilidades y conocimientos en diferentes áreas
@@ -97,7 +118,7 @@ const Capacitaciones = () => {
                 </div>
             </div>
 
-            <div className="text-center text-4xl font-bold text-lime-700 mt-10">
+            <div className="text-center text-2xl md:text-4xl font-bold text-green-700 mt-16">
                 <h1>Características de las Formaciones</h1>
             </div>
             <div className="flex flex-col lg:flex-row mt-10">
@@ -157,7 +178,7 @@ const Capacitaciones = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-4xl font-bold text-lime-700 mt-24">
+            <div className="text-center text-2xl md:text-4xl font-bold text-green-700 mt-16">
                 <h1>Formaciones disponibles</h1>
             </div>
             <div className="mt-10 mb-10">

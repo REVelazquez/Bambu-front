@@ -12,7 +12,8 @@ const AcordeonValores = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-1 w-1/2 mx-auto animate__animated animate__fadeIn">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-wrap w-11/12 mx-auto animate__animated animate__fadeIn">
+      {/*   */}
       {valores.map((valores, index) => (
         <section
           className={`flex flex-col md:flex-row mb-4 mr-4 ml-4 p-4 bg-transparent rounded-lg shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-300 ${activeItems[index] ? 'bg-green-300' : ''}`}

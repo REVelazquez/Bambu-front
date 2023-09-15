@@ -1,4 +1,4 @@
-import bP from './Bergallo_pastrone.png'
+import bP from './Bergallo_Pastrone.png'
 import cerveny from './Cerveny.jpg'
 import gett from './Gett.jpg'
 import loteria from './Loteria_de_Cordoba.jpg'

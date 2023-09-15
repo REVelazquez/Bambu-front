@@ -97,15 +97,12 @@ const Capacitaciones = () => {
     return (
         <div className="flex flex-col h-full">
             <div className={styles.header}>
-                <div className="mx-auto flex items-center justify-end mt-8 lg:mt-0 lg:mr-20 h-full">
-                    <div className="top-0 bg-zinc-300 bg-opacity-70 backdrop-blur-sm p-12 w-full lg:w-1/2 
-  rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full 
-  lg:rounded-tl-full lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-full 
-  sm:m-4">
-                        <h1 className="text-center text-green-700 font-bold text-4xl lg:text-6xl mb-5 mx-auto animate-fade-down">
+                <div className="mx-auto flex items-center justify-end lg:mr-20 h-full">
+                    <div className='mb-10 bg-zinc-300 bg-opacity-70 backdrop-blur-full p-10 w-full lg:w-1/2 rounded-full flex flex-col items-center'>
+                        <h1 className="text-center text-green-700 font-bold text-3xl lg:text-5xl mb-4 mx-auto animate-fade-down">
                             Capacitaciones
                         </h1>
-                        <p className="font-semibold ml-10 animate-fade-down">
+                        <p className="font-semibold animate-fade-down lg:text-sm text-center">
                             Nuestros servicios de capacitación están diseñados para proporcionar
                             un aprendizaje significativo y práctico a individuos y equipos que
                             desean mejorar sus habilidades y conocimientos en diferentes áreas
@@ -181,7 +178,7 @@ const Capacitaciones = () => {
             <div className="text-center text-2xl md:text-4xl font-bold text-green-700 mt-16">
                 <h1>Formaciones disponibles</h1>
             </div>
-            <div className="mx-8">
+            <div>
                 <Acordeon formaciones={formaciones} />
             </div>
 

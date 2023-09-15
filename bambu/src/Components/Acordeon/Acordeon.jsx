@@ -34,10 +34,11 @@ const Acordeon = ({ formaciones }) => {
   }, [resetTimeout]);
 
   return (
-    <section className="grid md:grid-cols-3 gap-12 w-full p-10 mx-auto animate__animated animate__fadeIn">
+    <section className="lg:grid lg:grid-cols-3 gap-12 w-full p-10 mx-auto animate__animated animate__fadeIn">
       {formaciones.map((formacion, index) => (
         <section
-          className={`relative flex flex-col md:flex-row p-4 bg-transparent rounded-lg shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-500 w-full h-40 hover:shadow-lg hover:opacity-90 `}
+          className={`relative p-4 mb-6 bg-transparent rounded-lg shadow-md lg:shadow-lg dark:bg-neutral-700 transition duration-500 w-full h-40 hover:shadow-lg hover:opacity-90 ${activeItems[index] ? 'lg:flex-row' : 'flex flex-col'
+            } ${styles.section}`}
           key={index}
         >
           <Image

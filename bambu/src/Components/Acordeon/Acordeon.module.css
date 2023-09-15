@@ -1,66 +1,89 @@
-<<<<<<< HEAD
-.section{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    
-}
-.article{
-    width:17em;
-    height: fit-content;
-    margin-bottom: 0.25em;
-}
-.container{
-=======
-/* .section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.article {
-    width: 17em;
-    height: fit-content;
-    margin-bottom: 0.25em;
-}
-
-.container {
->>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
-    display: flex;
-    background-color: rgb(128, 128, 128);
-    height: 4em;
-    align-items: center;
-    margin: .125em;
-    justify-content: center;
-}
-<<<<<<< HEAD
-.title{
-=======
-
+/* Estilos base para dispositivos grandes */
 .title {
->>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
-    margin-left: .25em;
-    align-items: center;
-    font-weight: 600;
+    font-size: 25px;
 }
-<<<<<<< HEAD
-.button{
-=======
-
-.button {
->>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
-    margin-left: .5em;
-    font-weight: 700;
-    font-size: 1em;
-    background-color: skyblue;
-}
-<<<<<<< HEAD
-.description{
-    background-color: rgba(45, 196, 222, 0.15);
-    font-size: 1em;
-}
-=======
 
 .description {
-    background-color: rgba(45, 196, 222, 0.15);
-    font-size: 1em;
-} */
->>>>>>> 044048c80a22cc8963e4261f5a80d56dbb4e5fb2
+    font-size: 16px;
+}
+
+/* Estilos para tabletas */
+@media (max-width: 768px) {
+    .title {
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .description {
+        font-size: 13px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para tamaños de pantalla entre 820px y 1180px */
+@media (min-width: 820px) and (max-width: 1180px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+
+    .title {
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .description {
+        font-size: 13px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+
+    .title {
+        font-size: 22px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .description {
+        font-size: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 653px) {
+    .title {
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .description {
+        font-size: 13px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './calendario.module.css'
+import styles from './index.module.css'
 
 const Calendario = () => {
   return (

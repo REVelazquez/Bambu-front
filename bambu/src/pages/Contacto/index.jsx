@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from 'react';
-import styles from "./contacto.module.css"
+import styles from "./index.module.css"
 import { useForm, ValidationError } from '@formspree/react';
 import Link from "next/link";
 

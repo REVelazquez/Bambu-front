@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './herramientas.module.css';
+import style from './index.module.css';
 
 const Herramientas = () => {
   return (
@@ -49,7 +49,7 @@ const Herramientas = () => {
         <div className="flex-1 text-center m-6 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md lg:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
           <div className="p-6">
             <h5 className="mb-2 text-2xl lg:text-3xl leading-tight text-green-700 font-semibold">
-              <i className="fas fa-pen mr-2 text-3xl lg:text-4xl"></i> Algunas herramientas descargables
+              <i className="fas fa-pen mr-2 text-3xl lg:text-4xl"></i> Herramientas descargables
             </h5>
             <div className='text-left'>
               <p className="mb-4 mt-10 text-base lg:text-sm text-neutral-600">

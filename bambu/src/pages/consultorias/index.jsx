@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import ConsultancyCard from "../Components/ConsultancyCard/ConsultancyCard";
 
-import styles from "./consultorias.module.css";
+import styles from "./index.module.css";
 
 function Consultancy() {
   const benefits = [

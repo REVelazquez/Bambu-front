@@ -9,7 +9,6 @@ const Contacto = () => {
   if (state.succeeded) {
     return (
       <div className="flex flex-col h-full">
-
         <div className={styles.header}>
           <div className="mx-auto flex items-center justify-end mt-8 lg:mt-0 lg:mr-20 h-full">
             <div className='mb-10 bg-zinc-300 bg-opacity-70 backdrop-blur-full p-6 w-full lg:w-1/3 rounded-full flex flex-col items-center'>

@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
-import Navbar from '@/Components/NavBar/navBar'
-import Footer from '@/Components/Footer/footer'
+import Navbar from './NavBar/navBar'
+import Footer from './Footer/footer'
 import Head from 'next/head'
 
 

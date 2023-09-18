@@ -1,7 +1,7 @@
-import { images } from '@/Assets/Logos_Empresas/index'
+import { images } from '../../../../public/Assets/Logos_Empresas/index'
 import Image from 'next/image'
 import Style from './Carrousel.module.css'
-export const Carrousel = () => {
+const Carrousel = () => {
     return (
 
         <div className='flex justify-center h-full'>
@@ -21,3 +21,5 @@ export const Carrousel = () => {
         </div>
     )
 }
+
+export default Carrousel

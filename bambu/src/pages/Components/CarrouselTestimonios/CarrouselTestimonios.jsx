@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import { images } from '@/Assets/Testimonios';
+import { images } from '../../../../public/Assets/Testimonios';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
 import styles from './CarrouselTesti.module.css'

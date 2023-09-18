@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../Assets/Bambúf (1).jpg';
+import logo from '../../../public/Assets/Bambúf1.jpg';
 
 const Footer = () => {
     return (

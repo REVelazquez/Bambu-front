@@ -8,7 +8,7 @@ const texts = {
     tittle2: 'Sobre nosotros',
     tittle3: 'Cultura organizacional',
     tittle4: '¿Que nos hace destacar?',
-    tittle5:'Equipo fundador',
+    tittle5:'¡Conoce a nuestro equipo!',
 
     description: 'En el denso bosque empresarial, emerge una poderosa entidad: Bambú. Somos más que una empresa de consultoría y capacitación; somos el viento fresco que impulsa a las PyMES y pequeños emprendedores a crecer y prosperar.',
 

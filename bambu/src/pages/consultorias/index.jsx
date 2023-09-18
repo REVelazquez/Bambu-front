@@ -1,12 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import personalizada from "../../Assets/personalizada.gif";
-import duracion from "../../Assets/duracion.gif";
-import estrategia from "../../Assets/estrategia.gif";
-import inversion from "../../Assets/inversion.gif";
-import resultados from "../../Assets/resultados.gif";
-import ConsultancyCard from "@/Components/ConsultancyCard/ConsultancyCard";
+import ConsultancyCard from "../Components/ConsultancyCard/ConsultancyCard";
 
 import styles from "./index.module.css";
 
@@ -71,12 +65,12 @@ function Consultancy() {
         </div>
       </div>
       <div className="text-center mb-32">
-        {/* <h1 className="mb-8 text-xl lg:text-2xl font-bold mt-10">
-          Si te interesaron, contactanos para saber mas:
-        </h1> */}
-        <a href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+        <h1 className="mb-8 text-xl lg:text-2xl font-bold mt-10">
+          ¿Quieres descubrir más acerca de las consultorías?
+        </h1>
+        <Link href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
           ¡Contáctanos para obtener más información!
-        </a>
+        </Link>
       </div>
     </div>
   );

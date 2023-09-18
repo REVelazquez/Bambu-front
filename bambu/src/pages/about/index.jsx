@@ -1,13 +1,13 @@
 import React from 'react';
-import { texts, items } from '@/Assets/about/aboutText';
-import Card from '@/Components/CardsAbout/Card';
-import imageDaniel from '@/Assets/about/daniel.png';
-import imageGabo from '@/Assets/about/gabo.png';
-import equipo from '@/Assets/about/equipo.jpg';
+import { texts, items } from '../../../public/Assets/about/aboutText';
+import Card from '../Components/CardsAbout/Card';
+import imageDaniel from '../../../public/Assets/about/daniel.png';
+import imageGabo from '../../../public/Assets/about/gabo.png';
+import equipo from '../../../public/Assets/about/equipo.jpg';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import AcordeonValores from '@/Components/AcordeonValores/AcordeonValores';
+import AcordeonValores from '../Components/AcordeonValores/AcordeonValores';
 
 const About = () => {
     return (
@@ -56,37 +56,37 @@ const About = () => {
 
             {/* cultura organizacional */}
 
-            <section className=''> 
-        
+            <section className=''>
+
                 <h1 className='font-bold mt-28 mb-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-center text-green-800 animate-fade-down'>{texts.tittle3}</h1>
-               
-               
-               <section className='flex flex-col lg:flex-row w-11/12 mx-auto p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700'>
-                {/* flex flex-col lg:flex-row w-11/12 mx-auto animate__animated animate__fadeIn */}
-                <section className="flex-1 text-center m-6 sm:m-6 p-2 sm:p-4 md:p-4 lg:p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
-                    <h3 className='text-green-700 font-bold text-xl sm:text-2xl lg:text-2xl mb-3 sm:mb-5 animate-fade-down'>
-                        {texts.subtittle1}
-                    </h3>
-                    <p className='font-semibold animate-fade-down'>
-                        {texts.visionDesc}
-                    </p>
-                </section>
 
 
-                <section className="flex-1 text-center m-6 p-4 sm:m-6 p-2 sm:p-4 md:p-4 lg:p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
-                <h3 className='text-green-700 font-bold text-xl sm:text-2xl lg:text-2xl mb-3 sm:mb-5 animate-fade-down'>
-                        {texts.subtittle2}
-                    </h3>
-                    <p className='font-semibold animate-fade-down'>
-                        {texts.misionDesc}
-                    </p>
+                <section className='flex flex-col lg:flex-row w-11/12 mx-auto p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700'>
+                    {/* flex flex-col lg:flex-row w-11/12 mx-auto animate__animated animate__fadeIn */}
+                    <section className="flex-1 text-center m-6 sm:m-6 p-2 sm:p-4 md:p-4 lg:p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
+                        <h3 className='text-green-700 font-bold text-xl sm:text-2xl lg:text-2xl mb-3 sm:mb-5 animate-fade-down'>
+                            {texts.subtittle1}
+                        </h3>
+                        <p className='font-semibold animate-fade-down'>
+                            {texts.visionDesc}
+                        </p>
+                    </section>
+
+
+                    <section className="flex-1 text-center m-6 p-4 sm:m-6 p-2 sm:p-4 md:p-4 lg:p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
+                        <h3 className='text-green-700 font-bold text-xl sm:text-2xl lg:text-2xl mb-3 sm:mb-5 animate-fade-down'>
+                            {texts.subtittle2}
+                        </h3>
+                        <p className='font-semibold animate-fade-down'>
+                            {texts.misionDesc}
+                        </p>
+                    </section>
                 </section>
-                </section>    
 
                 {/* valores */}
                 {/* pb-6 sm:pb-12 md:pb-12 flex flex-col md:flex-row justify-center font-semibold animate-fade-down */}
                 <span className='ml-4'>
-                <h3 className='font-bold mt-28 4xl sm:mt-20 md:mt-28 mb-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-center text-green-800'>
+                    <h3 className='font-bold mt-28 4xl sm:mt-20 md:mt-28 mb-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-center text-green-800'>
 
                         {texts.subtittle3}
                     </h3>

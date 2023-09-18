@@ -3,6 +3,11 @@ import { useState, useEffect } from 'react';
 import styles from './Acordeon.module.css'
 
 const Acordeon = ({ formaciones }) => {
+
+  if (!Array.isArray(formaciones)) {
+    return null;
+  }
+
   const [activeItems, setActiveItems] = useState(new Array(formaciones.length).fill(false));
   const [resetTimeout, setResetTimeout] = useState(null);
 

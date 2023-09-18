@@ -24,7 +24,7 @@ const Navbar = () => {
                         <Image src={logo} alt="Logo" width={120} height={40} className='rounded-md' />
                     </Link>
                     <div className="hidden md:flex space-x-12">
-                        <Link href="/About/about">
+                        <Link href="/about">
                             <p className="text-black font-semibold p-1 hover:opacity-50">Sobre nosotros</p>
                         </Link>
                         <div className="relative group">
@@ -36,31 +36,31 @@ const Navbar = () => {
                             </div>
                             <ul className={`absolute hidden bg-white border rounded-md shadow-md group-hover:block ${router.pathname === '/Capacitaciones/capacitaciones' ? 'text-green-500' : ''}`}>
                                 <li>
-                                    <Link href="/Mentoria/mentoria">
+                                    <Link href="/mentorias">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Mentorias</p>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/Consultorias/consultorias">
+                                    <Link href="/consultorias">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Consultorias</p>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/Capacitaciones/capacitaciones">
+                                    <Link href="/capacitaciones">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Capacitaciones</p>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/Herramientas/herramientas">
+                                    <Link href="/herramientas">
                                         <p className="text-black p-2 font-semibold hover:opacity-50">Herramientas</p>
                                     </Link>
                                 </li>
                             </ul>
                         </div>
-                        <Link href="/Contacto/contacto">
+                        <Link href="/contacto">
                             <p className="text-black font-semibold p-1 hover:opacity-50">Contacto</p>
                         </Link>
-                        <Link href="/Calendario/calendario">
+                        <Link href="/calendario">
                             <p className="text-black font-semibold p-1 hover:opacity-50">Cita de Diagnostico</p>
                         </Link>
                     </div>
@@ -79,22 +79,22 @@ const Navbar = () => {
                 {menuOpen && (
                     <div className="md:hidden animated animate__fadeIn">
                         <div className="bg-white">
-                            <Link href="/About/about">
+                            <Link href="about">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">About</p>
                             </Link>
-                            <Link href="/Mentoria/mentoria">
+                            <Link href="mentorias">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Mentorias</p>
                             </Link>
-                            <Link href="/Consultorias/consultorias">
+                            <Link href="/consultorias">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Consultorias</p>
                             </Link>
-                            <Link href="/Capacitaciones/capacitaciones">
+                            <Link href="/capacitaciones">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Capacitaciones</p>
                             </Link>
-                            <Link href="/Herramientas/herramientas">
+                            <Link href="/herramientas">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Herramientas</p>
                             </Link>
-                            <Link href="/Contacto/contacto">
+                            <Link href="/Contacto">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Contacto</p>
                             </Link>
                             <Link href="/Calendario/calendario">

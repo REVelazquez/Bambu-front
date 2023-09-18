@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './capacitaciones.module.css';
+import styles from './index.module.css';
 import Acordeon from '@/Components/Acordeon/Acordeon';
 import { images } from '@/Assets/Capacitaciones';
 

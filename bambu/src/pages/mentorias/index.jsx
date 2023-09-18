@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './mentoria.module.css';
+import style from './index.module.css';
 
 const Mentoring = () => {
   return (
@@ -8,7 +8,7 @@ const Mentoring = () => {
         <div className="mx-auto flex items-center justify-end mt-8 lg:mt-0 lg:mr-20 h-full">
           <div className='mb-10 bg-zinc-300 bg-opacity-70 backdrop-blur-full p-6 w-full lg:w-1/3 rounded-full flex flex-col items-center'>
             <div className='text-center'>
-              <h1 className='text-green-700 font-bold text-4xl lg:text-6xl mb-5 animate-fade-down'>Mentoría</h1>
+              <h1 className='text-green-700 font-bold text-4xl lg:text-6xl mb-5 animate-fade-down'>Mentorías</h1>
               <p className='font-semibold animate-fade-down'>
                 Ofrecemos servicios de mentoring personalizados para ayudarte a alcanzar tus metas y
                 maximizar tu potencial. Nuestros programas de mentoría están diseñados para brindarte la

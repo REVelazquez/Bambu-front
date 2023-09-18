@@ -79,10 +79,10 @@ const Navbar = () => {
                 {menuOpen && (
                     <div className="md:hidden animated animate__fadeIn">
                         <div className="bg-white">
-                            <Link href="about">
-                                <p className="text-black font-semibold p-2 hover:opacity-50">About</p>
+                            <Link href="/about">
+                                <p className="text-black font-semibold p-2 hover:opacity-50">Sobre nosotros</p>
                             </Link>
-                            <Link href="mentorias">
+                            <Link href="/mentorias">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Mentorias</p>
                             </Link>
                             <Link href="/consultorias">

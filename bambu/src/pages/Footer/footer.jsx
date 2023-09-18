@@ -26,10 +26,10 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col text-center">
                     <h3 className='mb-4 text-xl font-bold'>Nuestros Servicios</h3>
-                    <a href='/Mentoria/mentoria' className="mb-1 hover:underline">Mentorias</a>
-                    <a href='/Consultorias/consultorias' className="mb-1 hover:underline">Consultorias</a>
-                    <a href='/Capacitaciones/capacitaciones' className="mb-1 hover:underline">Capacitaciones</a>
-                    <a href='' className='hover:underline'>Herramientas</a>
+                    <a href='/mentoria' className="mb-1 hover:underline">Mentorias</a>
+                    <a href='/consultorias' className="mb-1 hover:underline">Consultorias</a>
+                    <a href='/capacitaciones' className="mb-1 hover:underline">Capacitaciones</a>
+                    <a href='/herramientas' className='hover:underline'>Herramientas</a>
                 </div>
             </div>
             <div className="w-full text-center mt-6">

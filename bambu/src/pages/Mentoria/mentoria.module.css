@@ -1,5 +1,5 @@
-.container{
-    background-image: url(../../Assets/Mentor.jpg);
+.container {
+    background-image: url(../../../public/Assets/Mentor.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;

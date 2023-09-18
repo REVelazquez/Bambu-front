@@ -1,5 +1,5 @@
-.container{
-    background-image: url(../../Assets/Herramientas.jpg);
+.container {
+    background-image: url(../../../public/Assets/Herramientas.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;

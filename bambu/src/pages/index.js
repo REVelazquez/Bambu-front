@@ -26,7 +26,7 @@ const Home = () => {
           <p className="text-gray-700 mb-6 text-black font-semibold max-w-[85%]">
             Somos más que una empresa de consultoría y capacitación; somos el viento fresco que impulsa a las PyMES y pequeños emprendedores a crecer y prosperar. Nuestra misión es sencilla pero poderosa: nutrir el crecimiento.
           </p>
-          <Link href="/About/about">
+          <Link href="/about">
             <div className="inline-block bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 hover:text-white transition duration-300">
               Conócenos más
             </div>
@@ -75,7 +75,7 @@ const Home = () => {
                   <Loading />
                 </div>
               ) : (
-                <Link href="/Mentoria/mentoria" >
+                <Link href="/mentoria" >
                   <div>
                     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                     <lord-icon
@@ -99,7 +99,7 @@ const Home = () => {
                   <Loading />
                 </div>
               ) : (
-                <Link href="/Capacitaciones/capacitaciones" >
+                <Link href="/capacitaciones" >
                   <div >
                     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                     <lord-icon
@@ -123,7 +123,7 @@ const Home = () => {
                   <Loading />
                 </div>
               ) : (
-                <Link href="/Consultorias/consultorias" >
+                <Link href="/consultorias" >
                   <div>
                     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                     <lord-icon
@@ -147,7 +147,7 @@ const Home = () => {
                   <Loading />
                 </div>
               ) : (
-                <Link href="/Herramientas/herramientas" >
+                <Link href="/herramientas" >
                   <div>
                     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                     <lord-icon

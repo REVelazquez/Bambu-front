@@ -61,7 +61,7 @@ const Navbar = () => {
                             <p className="text-black font-semibold p-1 hover:opacity-50">Contacto</p>
                         </Link>
                         <Link href="/calendario">
-                            <p className="text-black font-semibold p-1 hover:opacity-50">Cita de Diagnostico</p>
+                            <p className="text-black font-semibold p-1 hover:opacity-50">Cita de Diagnóstico</p>
                         </Link>
                     </div>
                     <div className="md:hidden">
@@ -97,8 +97,8 @@ const Navbar = () => {
                             <Link href="/Contacto">
                                 <p className="text-black font-semibold p-2 hover:opacity-50">Contacto</p>
                             </Link>
-                            <Link href="/Calendario/calendario">
-                                <p className="text-black font-semibold p-2 hover:opacity-50">Calendario</p>
+                            <Link href="/calendario">
+                                <p className="text-black font-semibold p-2 hover:opacity-50">Cita de Diagnóstico</p>
                             </Link>
                         </div>
                     </div>

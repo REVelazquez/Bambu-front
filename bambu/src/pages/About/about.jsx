@@ -55,35 +55,33 @@ const About = () => {
             </div>
 
             {/* cultura organizacional */}
-            <section className=''> 
-                <h1 className='font-bold mt-28 mb-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down'>{texts.tittle3}</h1>
-                <section className='flex flex-row align-center p-16'>
-                <section className="flex-1 text-center m-6 p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
-                    <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-5 animate-fade-down'>
-                        {texts.subtittle1}
-                    </h3>
-                    <p className='font-semibold animate-fade-down'>
-                        {texts.visionDesc}
-                    </p>
-                </section>
-                <section className="flex-1 text-center m-6 p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
-                <h3 className='text-green-700 font-bold text-l lg:text-2xl mb-4 animate-fade-down'>
-                        {texts.subtittle2}
-                    </h3>
-                    <p className='font-semibold animate-fade-down'>
-                        {texts.misionDesc}
-                    </p>
-                </section>
-                </section>               
-                <span className='ml-8'>
-                <h3 className='font-bold mt-28 mb-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800'>
-                        {texts.subtittle3}
-                    </h3>
-                    <p className='flex flex-col pb-12 md:flex-row justify-center font-semibold animate-fade-down'>
-                        {texts.valoresDesc}
-                    </p>
-                </span>
-                    <AcordeonValores />
+            <section className='text-center px-6'> 
+            <h1 className='font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-green-800 mt-10 mb-8 animate-fade-down'>
+          {texts.tittle3}
+        </h1>
+
+        <div className='flex flex-wrap justify-center items-center'>
+          <div className='w-full md:w-1/2 lg:w-1/3 m-4 p-4 rounded-lg shadow-md'>
+            <h3 className='text-green-700 font-bold text-lg md:text-xl lg:text-2xl mb-4'>
+              {texts.subtittle1}
+            </h3>
+            <p className='font-semibold'>{texts.visionDesc}</p>
+          </div>
+          <div className='w-full md:w-1/2 lg:w-1/3 m-4 p-4 rounded-lg shadow-md'>
+            <h3 className='text-green-700 font-bold text-lg md:text-xl lg:text-2xl mb-4'>
+              {texts.subtittle2}
+            </h3>
+            <p className='font-semibold'>{texts.misionDesc}</p>
+          </div>
+        </div>
+
+        <h3 className='font-semibold mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-green-800'>
+          {texts.subtittle3}
+        </h3>
+        <p className='mt-8 mb-8 text-center text-lg md:text-xl lg:text-2xl'>
+          {texts.valoresDesc}
+        </p>
+        <AcordeonValores />
             </section>
             {/* Container para lo que hace destacar a Bambú */}
             <div key='Container destacar' className='items-center mt-12 h-96 w-full h-full'>

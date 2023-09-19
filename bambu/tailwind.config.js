@@ -31,7 +31,13 @@ module.exports = {
           },
         },
       },
+      opacity: {
+        '0': '0',
+        '100': '1',
+      },
+      // Aquí puedes agregar más clases de transición si es necesario
     },
   },
   plugins: [],
 }
+

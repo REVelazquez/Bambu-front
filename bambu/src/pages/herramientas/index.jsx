@@ -53,15 +53,10 @@ const Herramientas = () => {
             </h5>
             <div className='text-left'>
               <p className="mb-4 mt-10 text-base lg:text-sm text-neutral-600">
-                ➢ E-Books de Desarrollo Profesional: Guías detalladas y prácticas sobre temas
-                relevantes para el crecimiento profesional.
-              </p>
-              <p className="mb-4 text-base lg:text-sm text-neutral-600">
-                ➢ Plantillas de Plan de Negocios: Un esquema completo y estructurado para crear
-                un plan de negocios sólido.
-              </p>
-              <p className="mb-4 text-base lg:text-sm text-neutral-600">
-                ➢ Hojas de Cálculo: Plantillas Excel para llevar un registro preciso de tus finanzas.
+                Contáctanos hoy mismo para descubrir cómo nuestras herramientas pueden beneficiarte. 
+                Estamos disponibles para responder a todas tus preguntas y proporcionarte detalles sobre 
+                nuestras soluciones. ¡Haz clic en el botón inferior para comenzar la conversación y obtener más información 
+                sobre nuestras herramientas descargables!
               </p>
             </div>
           </div>

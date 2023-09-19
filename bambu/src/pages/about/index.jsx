@@ -85,15 +85,14 @@ const About = () => {
 
                 {/* valores */}
                 {/* pb-6 sm:pb-12 md:pb-12 flex flex-col md:flex-row justify-center font-semibold animate-fade-down */}
-                <span className='ml-4'>
-                    <h3 className='font-bold mt-28 4xl sm:mt-20 md:mt-28 mb-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-center text-green-800'>
-
-                        {texts.subtittle3}
-                    </h3>
-                    <p className='mx-auto pb-6 sm:pb-12 md:pb-12 flex flex-col md:flex-row justify-center font-semibold animate-fade-down'>
-                        {texts.valoresDesc}
-                    </p>
-                </span>
+                <span className='ml-4 text-center'>
+  <h3 className='font-bold mt-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-green-800'>
+    {texts.subtittle3}
+  </h3>
+  <p className='mx-auto pb-6 sm:pb-12 md:pb-12 font-semibold animate-fade-down'>
+    {texts.valoresDesc}
+  </p>
+</span>
                 <AcordeonValores />
             </section>
             {/* Container para lo que hace destacar a Bambú */}

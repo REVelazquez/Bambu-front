@@ -60,7 +60,7 @@ const Acordeon = ({ formaciones }) => {
           >
             <div className={`absolute inset-0 flex flex-col justify-center items-center w-full rounded-md ${activeItems[index] ? 'border border-green-500' : ''}`}>
               <div className="flex flex-col items-center">
-                <h2 className={`font-bold text-white ${styles.title}`}>
+                <h2 className={`font-bold text-white text-lg md:text-2xl lg:text-xl xl:text-xl ${styles.title}`}>
                   {formacion.title}
                 </h2>
                 {activeItems[index] ? (
@@ -79,7 +79,7 @@ const Acordeon = ({ formaciones }) => {
               {activeItems[index] && (
                 <div>
                   <hr className="w-[85%] mx-auto mt-2 border-t-2 border-gray-200" />
-                  <p className={`w-full mx-auto mt-2 text-green-400 pr-8 pl-8 font-bold text-center animate__animated animate__fadeIn ${styles.description}`}>
+                  <p className={`w-full mx-auto mt-2 text-sm md:text-lg lg:text-sm xl:text-sm text-green-400 pr-2 pl-2 font-bold text-center animate__animated animate__fadeIn ${styles.description}`}>
                     {formacion.description}
                   </p>
                 </div>
@@ -93,7 +93,7 @@ const Acordeon = ({ formaciones }) => {
         <h1 className="mb-5 text-xl lg:text-2xl font-bold mt-5">
           ¿Quieres descubrir más acerca de nuestras capacitaciones?
         </h1>
-        <a href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+        <a href="/Contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
           ¡Contáctanos para obtener más información!
         </a>
       </div>

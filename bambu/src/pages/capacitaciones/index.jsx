@@ -97,12 +97,12 @@ const Capacitaciones = () => {
     return (
         <div className="flex flex-col h-full">
             <div className={styles.header}>
-                <div className="mx-auto flex items-center justify-end lg:mr-20 h-full">
-                    <div className='mb-10 bg-zinc-300 bg-opacity-70 backdrop-blur-full p-10 w-full lg:w-1/2 rounded-full flex flex-col items-center'>
-                        <h1 className="text-center text-green-700 font-bold text-3xl lg:text-5xl mb-4 mx-auto animate-fade-down">
+                <div className="mx-auto flex items-center justify-end mt-10 lg:mr-20 h-full">
+                    <div className='mb-10 bg-zinc-300 bg-opacity-90 backdrop-blur-full p-10 w-full lg:w-1/2 rounded-full flex flex-col items-center'>
+                        <h1 className={`text-center text-green-700 font-bold text-4xl lg:text-5xl mb-4 mx-auto animate-fade-down ${styles.title}`}>
                             Capacitaciones
                         </h1>
-                        <p className="font-semibold animate-fade-down lg:text-sm text-center">
+                        <p className={`font-semibold animate-fade-down text-center ${styles.description}`}>
                             Nuestros servicios de capacitación están diseñados para proporcionar
                             un aprendizaje significativo y práctico a individuos y equipos que
                             desean mejorar sus habilidades y conocimientos en diferentes áreas
@@ -120,14 +120,15 @@ const Capacitaciones = () => {
             </div>
             <div className="flex flex-col lg:flex-row mt-10">
                 <div className="flex-1 text-center m-5 p-10 bg-transparent rounded-lg hover:bg-green-100 shadow-md lg:shadow-lg dark:bg-neutral-700">
-                    <div className="p-6">
-                        <h5 className="mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
+                    <div className='text-center'>
+                        <h5 className={`mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50 ${styles.titleCard}`}>
                             Duración
                             <lord-icon
                                 src="https://cdn.lordicon.com/qznlhdss.json"
                                 trigger="hover"
                                 colors="primary:#121331"
                                 style={{ width: "50px", height: "50px", padding: "10px" }}
+                                className={styles.icon}
                             ></lord-icon>
                         </h5>
                         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
@@ -138,15 +139,16 @@ const Capacitaciones = () => {
                     </div>
                 </div>
                 <div className="flex-1 text-center m-5 p-10 bg-transparent rounded-lg hover:bg-green-100 shadow-md lg:shadow-lg dark:bg-neutral-700">
-                    <div className="p-6">
-                        <h5 className="mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
+                    <div>
+                        <h5 className={`mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50 ${styles.titleCard}`}>
                             Adaptable
                             <lord-icon
                                 src="https://cdn.lordicon.com/fbdgkenc.json"
                                 trigger="hover"
                                 colors="primary:#121331"
-                                style={{ width: "50px", height: "50px", padding: "10px" }}>
-
+                                style={{ width: "50px", height: "50px", padding: "10px" }}
+                                className={styles.icon}
+                            >
                             </lord-icon>
                         </h5>
                         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
@@ -157,14 +159,16 @@ const Capacitaciones = () => {
                     </div>
                 </div>
                 <div className="flex-1 text-center m-5 p-10 bg-transparent rounded-lg hover:bg-green-100 shadow-md lg:shadow-lg dark:bg-neutral-700">
-                    <div className="p-6">
-                        <h5 className="mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
+                    <div>
+                        <h5 className={`mb-2 text-3xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50 ${styles.titleCard}`}>
                             Modalidades
                             <lord-icon
                                 src="https://cdn.lordicon.com/vpcmkqzt.json"
                                 trigger="hover"
                                 colors="primary:#121331"
-                                style={{ width: "50px", height: "50px", padding: "10px" }}>
+                                style={{ width: "50px", height: "50px", padding: "10px" }}
+                                className={styles.icon}
+                            >
                             </lord-icon>
                         </h5>
                         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">

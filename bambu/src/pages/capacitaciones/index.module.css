@@ -8,9 +8,28 @@
     height: 600px;
 }
 
-
 @media (max-width: 768px) {
     .header {
-        font-size: 13.5px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 283px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .titleCard {
+        font-size: 25px;
     }
 }

@@ -1,89 +1,10 @@
-/* Estilos base para dispositivos grandes */
-.title {
-    font-size: 25px;
-}
-
-.description {
-    font-size: 16px;
-}
-
-/* Estilos para tabletas */
-@media (max-width: 768px) {
-    .title {
-        font-size: 18px;
-        padding: 5px;
-        margin-top: 10px;
-    }
-
-    .description {
-        font-size: 13px;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-}
-
-/* Estilos para tamaños de pantalla entre 820px y 1180px */
-@media (min-width: 820px) and (max-width: 1180px) {
-    .title {
-        font-size: 30px;
-    }
-
-    .description {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .title {
-        font-size: 28px;
-        padding: 5px;
-        margin-top: 10px;
-    }
-
-    .description {
-        font-size: 17px;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-}
-
-
-@media (min-width: 1024px) {
-
-    .title {
-        font-size: 18px;
-        padding: 5px;
-        margin-top: 10px;
-    }
-
-    .description {
-        font-size: 12px;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-}
-
-
 /* Estilos para dispositivos pequeños */
-@media (max-width: 653px) {
+@media (max-width: 283px) {
     .title {
-        font-size: 16px;
-        padding: 5px;
-        margin-top: 10px;
+        font-size: 12px;
     }
 
     .description {
-        font-size: 10.5px;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        font-size: 9.5px;
     }
 }

@@ -31,7 +31,7 @@ const Navbar = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
             </Head>
             <nav className="w-full fixed top-0 z-10 bg-green-400 bg-opacity-70 backdrop-blur-sm" style={{ fontFamily: 'Nunito Sans' }}>
-                <div className="container mx-auto flex justify-between items-center py-1">
+                <div className="container mx-auto flex justify-between items-center sm:py-5 py-1">
                     <Link href="/" className='ml-3'>
                         <Image src={logo} alt="Logo" width={120} height={40} className='rounded-md' />
                     </Link>

@@ -51,14 +51,12 @@ const Herramientas = () => {
             <h5 className="mb-2 text-2xl lg:text-3xl leading-tight text-green-700 font-semibold">
               <i className="fas fa-pen mr-2 text-3xl lg:text-4xl"></i> Herramientas descargables
             </h5>
-            <div className='text-left'>
-              <p className="mb-4 mt-10 text-base lg:text-sm text-neutral-600">
-                Contáctanos hoy mismo para descubrir cómo nuestras herramientas pueden beneficiarte. 
-                Estamos disponibles para responder a todas tus preguntas y proporcionarte detalles sobre 
-                nuestras soluciones. ¡Haz clic en el botón inferior para comenzar la conversación y obtener más información 
-                sobre nuestras herramientas descargables!
-              </p>
-            </div>
+            <p className="mb-4 mt-10 text-base lg:text-sm text-neutral-600">
+              Contáctanos hoy mismo para descubrir cómo nuestras herramientas pueden beneficiarte.
+              Estamos disponibles para responder a todas tus preguntas y proporcionarte detalles sobre
+              nuestras soluciones. ¡Haz clic en el botón inferior para comenzar la conversación y obtener más información
+              sobre nuestras herramientas descargables!
+            </p>
           </div>
         </div>
       </div>

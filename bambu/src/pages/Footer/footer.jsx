@@ -15,18 +15,18 @@ const Footer = () => {
                 <div className="flex flex-col text-center">
                     <h3 className='mb-4 text-xl font-bold'>Seguinos</h3>
                     <a href="https://api.whatsapp.com/send?phone=3516578866" target="_blank" rel="noopener noreferrer" className=" transition-transform transform hover:-translate-y-1">
-                        <i className="fab fa-facebook text-2xl"></i>
+                        <i className="fab fa-whatsapp text-2xl"></i>
                     </a>
-                    <a href="" className="  transition-transform transform hover:-translate-y-1">
+                    <a href="https://www.linkedin.com/in/bamb%C3%BA-c%C3%B3rdoba-19234a1ab/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:-translate-y-1">
                         <i className="fab fa-linkedin text-2xl mt-2"></i>
                     </a>
-                    <a href="" className=" transition-transform transform hover:-translate-y-1">
+                    <a href="https://instagram.com/cordobabambu?igshid=ZGUzMzM3NWJiOQ==" target="_blank" rel="noopener noreferrer" className=" transition-transform transform hover:-translate-y-1">
                         <i className="fab fa-instagram text-2xl mt-2"></i>
                     </a>
                 </div>
                 <div className="flex flex-col text-center">
                     <h3 className='mb-4 text-xl font-bold'>Nuestros Servicios</h3>
-                    <a href='/mentoria' className="mb-1 hover:underline">Mentorias</a>
+                    <a href='/mentorias' className="mb-1 hover:underline">Mentorias</a>
                     <a href='/consultorias' className="mb-1 hover:underline">Consultorias</a>
                     <a href='/capacitaciones' className="mb-1 hover:underline">Capacitaciones</a>
                     <a href='/herramientas' className='hover:underline'>Herramientas</a>

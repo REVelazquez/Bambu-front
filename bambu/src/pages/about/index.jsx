@@ -72,7 +72,6 @@ const About = () => {
                         </p>
                     </section>
 
-
                     <section className="flex-1 text-center m-6 p-4 sm:m-6 p-2 sm:p-4 md:p-4 lg:p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
                         <h3 className='text-green-700 font-bold text-xl sm:text-2xl lg:text-2xl mb-3 sm:mb-5 animate-fade-down'>
                             {texts.subtittle2}
@@ -86,13 +85,13 @@ const About = () => {
                 {/* valores */}
                 {/* pb-6 sm:pb-12 md:pb-12 flex flex-col md:flex-row justify-center font-semibold animate-fade-down */}
                 <span className='ml-4 text-center'>
-  <h3 className='font-bold mt-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-green-800'>
-    {texts.subtittle3}
-  </h3>
-  <p className='mx-auto pb-6 sm:pb-12 md:pb-12 font-semibold animate-fade-down'>
-    {texts.valoresDesc}
-  </p>
-</span>
+                    <h3 className='font-bold mt-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-green-800'>
+                        {texts.subtittle3}
+                    </h3>
+                    <p className='mx-auto pb-6 sm:pb-12 md:pb-12 font-semibold animate-fade-down'>
+                        {texts.valoresDesc}
+                    </p>
+                </span>
                 <AcordeonValores />
             </section>
             {/* Container para lo que hace destacar a Bambú */}

@@ -36,9 +36,12 @@ const Contacto = () => {
               >
                 <i className="fab fa-whatsapp"></i>
               </a>
-              <a href="" className={styles.linkedinIcon}>
+
+              <a href="https://www.linkedin.com/in/bamb%C3%BA-c%C3%B3rdoba-19234a1ab/"
+                className={styles.linkedinIcon}>
                 <i className="fab fa-linkedin"></i>
               </a>
+
               <a
                 href="https://instagram.com/cordobabambu?igshid=ZGUzMzM3NWJiOQ=="
                 className={styles.instagramIcon}
@@ -105,11 +108,16 @@ const Contacto = () => {
             >
               <i className="fab fa-whatsapp"></i>
             </a>
-            <a href="" className={styles.linkedinIcon}>
+            <a href="https://www.linkedin.com/in/bamb%C3%BA-c%C3%B3rdoba-19234a1ab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.linkedinIcon}>
               <i className="fab fa-linkedin"></i>
             </a>
             <a
               href="https://instagram.com/cordobabambu?igshid=ZGUzMzM3NWJiOQ=="
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.instagramIcon}
             >
               <i className="fab fa-instagram"></i>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {valores} from '../../../../public/Assets/about/aboutText'
+import { valores } from '../../../../public/Assets/about/aboutText'
 
 const AcordeonValores = () => {
   const [activeItems, setActiveItems] = useState(new Array(valores.length).fill(false));

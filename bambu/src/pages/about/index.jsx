@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div
       key="Container A"
-      className=" flex flex-col place-items-center w-screen m-auto h-full"
+      className=" flex flex-col place-items-center w-full m-auto h-full"
       style={{ backgroundColor: "#F2EDDC" }}
     >
       <h1 className="font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down">
@@ -22,14 +22,14 @@ const About = () => {
 
       <div className=" flex flex-col md:flex-row my-4 mx-auto md:ml-6 lg:ml-4 xl:ml-64 animate-fade-down">
         {/* Presentacion y bio de bambu */}
-        <div className="flex items-center mx-auto flex-col md:flex-row items-center ">
-          <span className="inline-flex  w-96 flex-col text-justify text-ellipsis">
-            <h2 className="mx-20 font-semibold text-3xl text-green-900 mt-8 ">
+        <div className="flex items-center p-4 mx-auto flex-col md:flex-row items-center ">
+          <div className="inline-flex  w-96 flex-col text-justify text-ellipsis">
+            <h2 className="mx-20 font-semibold text-3xl text-center text-green-900 mt-8 ">
               {texts.tittle2}
             </h2>
             <p className="m-0 mt-4 ">{texts.description}</p>
             <p className="m-0 mt-4 ">{texts.description2}</p>
-          </span>
+          </div>
 
           <div className="w-full sm:w-1/2 mt-6 sm:mt-0">
             <div
@@ -61,12 +61,11 @@ const About = () => {
 
       {/* cultura organizacional */}
 
-      <section className="">
-        <h1 className="font-bold mt-28 mb-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-center text-green-800 animate-fade-down">
+      <section className="text-center">
+        <h1 className="font-bold mt-28 mb-4 text-3xl sm:text-4xl md:text-4xl lg:text-4xl text-green-800 animate-fade-down">
           {texts.tittle3}
         </h1>
-
-        <section className="flex flex-col lg:flex-row w-11/12 mx-auto p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
+        <section className="flex flex-col lg:flex-row w-11/12 mx-auto p-4 lg:m-10 block rounded-lg  dark:bg-neutral-700">
           <section className="flex-1 text-center m-6 sm:m-6 p-2 sm:p-4 md:p-4 lg:p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
             <h3 className="text-green-700 font-bold text-xl sm:text-2xl lg:text-2xl mb-3 sm:mb-5 animate-fade-down">
               {texts.subtittle1}
@@ -92,16 +91,16 @@ const About = () => {
           <h3 className="font-bold mt-4 mb-8 text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-green-800">
             {texts.subtittle3}
           </h3>
-                
+
           <p className="w-11/12 mx-auto text-justify sm:w-11/12 md:w-11/12 lg:w-2/5 pb-12 sm:pb-12 md:pb-12 font-semibold animate-fade-down">
             {texts.valoresDesc}
           </p>
         </section>
 
-    <AcordeonValores />
+        <AcordeonValores />
 
-        
       </section>
+
       {/* Container para lo que hace destacar a Bambú */}
       <div
         key="Container destacar"

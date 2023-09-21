@@ -51,10 +51,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 p-10 mt-6 sm:mt-0 text-center sm:text-left">
-          <h1 className="font-bold text-5xl pr-3 sm:text-6xl mb-5 text-green-700">¡Bienvenidos a Bambú!</h1>
-          <p className="text-gray-700 mb-6 text-black font-semibold">
-            ¿Queres cambiar tu emprendimiento? ¡Transformalo con nosotros!
+        <div className="w-full flex-1 md:w-1/2 p-10 mt-6 sm:mt-0 text-center sm:text-left ">
+          <h1 className="font-bold text-5xl pr-3 sm:text-6xl mb-5 text-green-700 text-center">BAMBÚ</h1>
+          <p className="text-gray-700 mb-6 text-black font-bold text-green-700 text-center">
+            ¡Te ayudamos a transformar tu emprendimiento!
           </p>
           <p className="text-gray-700 mb-6 text-black font-semibold">
             En Bambú, estamos dedicados a impulsar tu éxito como emprendedor. Nuestros servicios de consultoría, mentoría y capacitación están diseñados para hacerte crecer. Desde estrategias de negocio hasta habilidades de liderazgo, tenemos todo lo que necesitas para triunfar. 
@@ -71,10 +71,10 @@ const Home = () => {
 
 
         {/* Imagen visible solo en pantallas más grandes */}
-        <div className="w-0 sm:w-1/2 sm:block hidden">
+        <div className="w-0 sm:w-1/2 sm:block hidden flex-1">
           <div style={{
-            width: '100%',
-            paddingBottom: '100%',
+            width: '70%',
+            paddingBottom: '70%',
             position: 'relative',
           }}>
             <div style={{
@@ -95,6 +95,7 @@ const Home = () => {
                 alt="Imagen de Home"
                 layout="fill"
                 objectFit="cover"
+
               />
             </div>
           </div>

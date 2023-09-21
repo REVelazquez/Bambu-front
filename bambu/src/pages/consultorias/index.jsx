@@ -31,6 +31,11 @@ function Consultancy() {
       info: "Consideramos que la consultoría es una inversión en el futuro de tu negocio. Al trabajar juntos, podrás adquirir habilidades y conocimientos valiosos que te beneficiarán a largo plazo. Nuestro enfoque se centra en empoderarte para que puedas enfrentar futuros desafíos con confianza y tomar decisiones informadas que impulsen el crecimiento continuo de tu empresa",
       image: "https://cdn.lordicon.com/jffauosv.json",
     },
+    {
+      title: "Consultoría Integral",
+      info: "En Bambú, ofrecemos una amplia gama de servicios de consultoría diseñados para impulsar tu negocio hacia el éxito. Nuestro equipo de expertos está listo para guiarte en áreas clave, incluyendo consultoría de negocios, estrategias de marketing digital, desarrollo web de vanguardia, estrategias de ventas efectivas y potente comunicación organizacional. Descubre cómo podemos llevar tu empresa al siguiente nivel",
+      image: "https://cdn.lordicon.com/svbmmyue.json",
+    }
   ];
 
   return (
@@ -56,14 +61,14 @@ function Consultancy() {
         {benefits.map((e, index) => (
           <ConsultancyCard title={e.title} image={e.image} info={e.info} key={index} />
         ))}
-        <div className="text-center my-auto">
-          <h1 className="mb-8 text-xl lg:text-3xl font-bold mt-10">
-            ¿Quieres descubrir más acerca de las consultorías?
-          </h1>
-          <Link href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
-            ¡Contáctanos para obtener más información!
-          </Link>
-        </div>
+      </div>
+      <div className="text-center my-auto">
+        <h1 className="mb-8 text-xl lg:text-3xl font-bold mt-10">
+          ¿Quieres descubrir más acerca de las consultorías?
+        </h1>
+        <Link href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+          ¡Contáctanos para obtener más información!
+        </Link>
       </div>
     </div>
   );

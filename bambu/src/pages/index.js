@@ -20,9 +20,9 @@ const Home = () => {
 
   return (
     <main className="flex flex-col items-center justify-center p-2 h-full">
-      <div className="flex flex-col sm:flex-row rounded-lg ml-2 sm:ml-10 mt-20 items-center">
+      <div className="flex flex-col sm:w-3/5 sm:flex-row rounded-lg ml-2 sm:ml-10 mt-40 mb-40 items-center justify-center">
         {/* Imagen visible solo en dispositivos móviles */}
-        <div className="w-full sm:hidden">
+        <div className="w-full sm:hidden mx-auto">
           <div style={{
             width: '100%',
             paddingBottom: '100%',
@@ -51,10 +51,16 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 p-10 mt-6 sm:mt-0 text-center sm:text-left">
-          <h1 className="font-bold text-5xl pr-3 sm:text-6xl mb-5 text-green-700">¡Bienvenidos a Bambú!</h1>
+        <div className="w-full sm:w-1/2 px-4 sm:px-0 mt-6 text-center xl:text-left mx-auto">
+          <h1 className="font-extrabold text-6xl sm:text-7xl mb-5 text-green-700 ">BAMBÚ</h1>
+          <p className="text-gray-700 mb-6 text-lg sm:text-xl text-black font-bold text-green-700 ">
+            ¡Te ayudamos a transformar tu emprendimiento!
+          </p>
           <p className="text-gray-700 mb-6 text-black font-semibold">
-            Somos más que una empresa de consultoría y capacitación; somos el viento fresco que impulsa a las PyMES y pequeños emprendedores a crecer y prosperar. Nuestra misión es sencilla pero poderosa: nutrir el crecimiento.
+            En Bambú, estamos dedicados a impulsar tu éxito como emprendedor. Nuestros servicios de consultoría, mentoría y capacitación están diseñados para hacerte crecer. Desde estrategias de negocio hasta habilidades de liderazgo, tenemos todo lo que necesitas para triunfar.
+          </p>
+          <p className="text-gray-700 mb-6 text-black font-semibold">
+            ¡No pierdas más tiempo, únete a la comunidad Bambú y lleva tu emprendimiento al siguiente nivel hoy mismo!
           </p>
           <Link href="/about">
             <div className="inline-block bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 hover:text-white transition duration-300">
@@ -63,9 +69,8 @@ const Home = () => {
           </Link>
         </div>
 
-
         {/* Imagen visible solo en pantallas más grandes */}
-        <div className="w-0 sm:w-1/2 sm:block hidden">
+        <div className="w-full sm:w-1/2 px-4 sm:block hidden">
           <div style={{
             width: '100%',
             paddingBottom: '100%',
@@ -75,7 +80,7 @@ const Home = () => {
               position: 'absolute',
               top: '0',
               left: '0',
-              width: '100%',
+              width: '120%',
               height: '100%',
               borderRadius: '50%',
               borderTopLeftRadius: '55%',
@@ -89,6 +94,7 @@ const Home = () => {
                 alt="Imagen de Home"
                 layout="fill"
                 objectFit="cover"
+
               />
             </div>
           </div>
@@ -119,7 +125,7 @@ const Home = () => {
                       style={{ width: "70px", height: "70px" }}>
                     </lord-icon>
                     <h1 className='text-2xl font-semibold'>Mentorias</h1>
-                    <p className="mb-4 font-thin mt-2 text-sm">Tu camino hacia el éxito comienza aquí</p>
+                    <p className="mb-4 font-thin mt-2">Tu camino hacia el éxito comienza aquí</p>
                   </div>
                 </Link>
               )
@@ -143,7 +149,7 @@ const Home = () => {
                       style={{ width: "70px", height: "70px" }}>
                     </lord-icon>
                     <h1 className='text-2xl font-semibold'>Capacitaciones</h1>
-                    <p className="mb-4 font-thin mt-2 text-sm">Potencia tu carrera con nuestras capacitaciones de alto nivel</p>
+                    <p className="mb-4 font-thin mt-2">Potencia tu carrera con nuestras capacitaciones de alto nivel</p>
                   </div>
                 </Link>
               )

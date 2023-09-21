@@ -95,6 +95,8 @@ const Home = () => {
         </div>
       </div>
 
+
+
       <div className='mb-10 mt-10 md:mt-36 mx-2 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto'>
         <h1 className='text-center text-2xl md:text-4xl font-bold text-green-700'>NUESTROS SERVICIOS</h1>
         <p className='text-center text-lg md:text-xl font-lg mt-2 mb-10 text-base text-neutral-600 dark:text-neutral-200'>Te ayudamos a crecer</p>

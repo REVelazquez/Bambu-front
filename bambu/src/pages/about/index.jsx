@@ -8,6 +8,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import AcordeonValores from "../Components/AcordeonValores/AcordeonValores";
+import style from './index.module.css';
 
 const About = () => {
   return (
@@ -136,8 +137,35 @@ const About = () => {
         <h1 className="font-semibold text-green-900 text-3xl text-center w-90">
           {texts.tittle5}
         </h1>
-        <div className="flex flex-row m-0">
-          <div className="place-items-center bg-green-500 m-4 w-44 h-44 rounded-xl border-8 border-green-800">
+        <div className="flex flex-row m-5 space-x-5">
+          <div className={style.card}>
+            <div className={style.img_container}>
+        <div className={style.img}>
+        <Image src={imageDaniel} alt=""/>
+        </div>
+        <div className={`${style.description} ${style.card}`}>
+            <span className={style.title}>
+            Daniel Kübl
+            </span>
+        </div>
+    </div>
+</div>
+<div className={style.card}>
+            <div className={style.img_container}>
+        <div className={style.img}>
+        <Image
+              src={imageGabo}
+              alt=""
+            />
+        </div>
+        <div className={`${style.description} ${style.card}`}>
+            <span className={style.title}>
+            Daniel Kübl
+            </span>
+        </div>
+    </div>
+</div>
+          {/* <div className="place-items-center bg-green-500 m-4 w-44 h-44 rounded-xl border-8 border-green-800">
             <div key="container equipo 1" className="ml-6 flex flex-row">
               <h1 className="mt-3 font-bold">Daniel Kübl</h1>
               <a
@@ -181,7 +209,7 @@ const About = () => {
               className="w-28 h-28 ml-8 mb-0 mt-0"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

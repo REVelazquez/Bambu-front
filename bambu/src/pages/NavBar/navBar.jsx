@@ -33,7 +33,7 @@ const Navbar = () => {
             <nav className="w-full fixed top-0 z-10 bg-green-400 bg-opacity-70 backdrop-blur-sm" style={{ fontFamily: 'Nunito Sans' }}>
                 <div className="container mx-auto flex justify-between items-center sm:py-5 py-1">
                     <Link href="/" className='ml-3'>
-                        <Image src={logo} alt="Logo" width={120} height={40} className='rounded-md' />
+                        <Image src={logo} alt="Logo" width={120} height={40} className='rounded-md hover:ring-green-600 hover:ring-4 duration-300 shadow-md' />
                     </Link>
                     <div className="hidden md:flex space-x-12">
                         <Link href="/about">

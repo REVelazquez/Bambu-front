@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../public/Assets/Bambúf1.jpg';
+import styles from './footer.module.css'
 
 const Footer = () => {
     return (
@@ -9,7 +10,14 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-center p-6 mb-3 space-y-6 md:space-y-0 md:space-x-20">
                 <div className="flex items-center justify-center md:justify-start">
                     <Link href="/">
-                        <Image src={logo} alt="Logo" width={260} height={40} className='rounded-md mx-auto md:mx-0' />
+                        <Image
+                            src={logo}
+                            alt="Logo"
+                            height={60}
+                            width={240}
+                            className="mx-auto md:mx-0 hover:ring-green-600 hover:ring-4 duration-300 shadow-md rounded-md"
+                        />
+
                     </Link>
                 </div>
                 <div className="flex flex-col text-center">

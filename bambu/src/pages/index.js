@@ -54,8 +54,14 @@ const Home = () => {
         <div className="w-full md:w-1/2 p-10 mt-6 sm:mt-0 text-center sm:text-left">
           <h1 className="font-bold text-5xl pr-3 sm:text-6xl mb-5 text-green-700">¡Bienvenidos a Bambú!</h1>
           <p className="text-gray-700 mb-6 text-black font-semibold">
-            Somos más que una empresa de consultoría y capacitación; somos el viento fresco que impulsa a las PyMES y pequeños emprendedores a crecer y prosperar. Nuestra misión es sencilla pero poderosa: nutrir el crecimiento.
+            ¿Queres cambiar tu emprendimiento? ¡Transformalo con nosotros!
           </p>
+          <p className="text-gray-700 mb-6 text-black font-semibold">
+            En Bambú, estamos dedicados a impulsar tu éxito como emprendedor. Nuestros servicios de consultoría, mentoría y capacitación están diseñados para hacerte crecer. Desde estrategias de negocio hasta habilidades de liderazgo, tenemos todo lo que necesitas para triunfar. 
+          </p>
+          <p className="text-gray-700 mb-6 text-black font-semibold">
+            ¡No pierdas más tiempo, únete a la comunidad Bambú y lleva tu emprendimiento al siguiente nivel hoy mismo!
+         </p>
           <Link href="/about">
             <div className="inline-block bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 hover:text-white transition duration-300">
               Conócenos más

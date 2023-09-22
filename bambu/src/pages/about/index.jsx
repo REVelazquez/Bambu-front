@@ -57,9 +57,8 @@ const About = () => {
       <div className='mb-10 mt-10 md:mt-36 mx-4 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto'>
         <h1 className='font-bold mb-4 mt-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down'>{texts.tittle3}</h1>
 
-        {/* Utiliza flex-col en dispositivos móviles y flex-row en otros dispositivos */}
         <section className='flex flex-col md:flex-row p-4 md:p-16'>
-          <section className="flex-1 text-center p-4 mr-8 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
+          <section className="flex-1 text-center p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
             <h3 className='text-green-700 font-bold text-lg md:text-2xl mb-5 animate-fade-down'>
               {texts.subtittle1}
             </h3>

@@ -122,7 +122,7 @@ const Navbar = () => {
                             </div>
 
                             {mostrarServicios && (
-                                <ul className='ml-10 bg-green-200 rounded-md w-1/2'>
+                                <ul className='ml-10 bg-green-200 rounded-md w-1/2 animate-fade-down'>
                                     <li>
                                         <Link href="/mentorias">
                                             <p className="text-black p-2 font-semibold hover:opacity-50" onClick={() => { closeMenu(); closeService(); }}>Mentorias</p>

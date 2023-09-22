@@ -99,7 +99,7 @@ const Contacto = () => {
           <h1 className="mb-4 text-center text-lg font-medium text-gray-800">
             Contactate con nosotros
           </h1>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <a
               href="https://api.whatsapp.com/send?phone=3516578866"
               target="_blank"

@@ -1,12 +1,11 @@
 import React from "react";
 import { texts, items } from "../../../public/Assets/about/aboutText";
 import Card from "../Components/CardsAbout/Card";
-import imageDaniel from "../../../public/Assets/about/daniel.png";
-import imageGabo from "../../../public/Assets/about/gabo.png";
+import imageDaniel from "../../../public/Assets/about/DanielKubl.jpeg";
+import imageGabo from "../../../public/Assets/about/GabrielHeredia.jpeg";
 import equipo from "../../../public/Assets/about/equipo.jpg";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 import AcordeonValores from "../Components/AcordeonValores/AcordeonValores";
 import style from './index.module.css';
 
@@ -58,9 +57,8 @@ const About = () => {
       <div className='mb-10 mt-10 md:mt-36 mx-4 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto'>
         <h1 className='font-bold mb-4 mt-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down'>{texts.tittle3}</h1>
 
-        {/* Utiliza flex-col en dispositivos móviles y flex-row en otros dispositivos */}
         <section className='flex flex-col md:flex-row p-4 md:p-16'>
-          <section className="flex-1 text-center p-4 mr-8 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
+          <section className="flex-1 text-center p-4 lg:m-10 block rounded-lg bg-transparent bg-opacity-50 shadow-md dark:bg-neutral-700">
             <h3 className='text-green-700 font-bold text-lg md:text-2xl mb-5 animate-fade-down'>
               {texts.subtittle1}
             </h3>
@@ -120,42 +118,52 @@ const About = () => {
         </div>
       </div>
       {/* container equipo de */}
-      <div key="Container equipo" className="mt-6">
+      <div key="Container equipo" className="mt-12 md:mt-36 md:mb-10">
         <h1 className="font-semibold text-green-900 text-3xl text-center w-90">
           {texts.tittle5}
         </h1>
-        <div className="flex flex-col md:flex-row m-5 space-y-5 md:space-y-0 md:space-x-5">
-          <div className={`${style.card} w-full md:w-1/2 lg:w-1/3`}>
-            <div className={style.img_container}>
-        <div className={style.img}>
-          <Image src={imageDaniel} alt=""/>
-        </div>
-        <div className={`${style.description} ${style.card}`}>
-            <span className={style.title}>
-            Daniel Kübl
-            </span>
-        </div>
-    </div>
-</div>
-<div className={`${style.card} w-full md:w-1/2 lg:w-1/3`}>
-            <div className={style.img_container}>
-              <div className={style.img}>
-                <Image
-                src={imageGabo}
-                alt=""
-                />
-                </div>
-                <div className={`${style.description} ${style.card}`}>
-                  <span className={style.title}>
-                    Daniel Kübl
+        <div className='flex flex-col md:flex-row p-1 md:p-2'>
+          <Link href="https://www.linkedin.com/in/daniel-k%C3%BCbl-418a58180/">
+            <div className="flex-1 text-center p-4 lg:m-10 cursor-pointer">
+              <div className={`${style.card} w-full max-w-md md:max-w-none mx-auto`}>
+                <div className={style.img_container}>
+                  <div className={style.img}>
+                    <Image src={imageDaniel} alt="" />
+                  </div>
+                  <div className={`${style.description} ${style.card} text-center`}>
+                    <span className={style.title}>
+                      Daniel Kübl
                     </span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/gaboheredia/">
+            <div className="flex-1 text-center p-4 lg:m-10 cursor-pointer">
+              <div className={`${style.card} w-full max-w-md md:max-w-none mx-auto`}>
+                <div className={style.img_container}>
+                  <div className={style.img}>
+                    <Image
+                      src={imageGabo}
+                      alt=""
+                    />
+                  </div>
+                  <div className={`${style.description} ${style.card} text-center`}>
+                    <span className={style.title}>
+                      Gabriel Heredia
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
-       );
-    };
+
+      </div>
+    </div>
+  );
+};
 
 export default About;

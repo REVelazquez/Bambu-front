@@ -11,7 +11,7 @@
     color: white;
     border: 1px solid white;
     padding: 1% 2%;
-    margin-left: 6%;
+    margin: 2%;
     border-radius: 10px;
     background-color: #287525;
     transition: transform 0.2s ease-in-out;
@@ -37,7 +37,7 @@
     color: white;
     border: 1px solid white;
     padding: 1% 2%;
-    margin-left: 6%;
+    margin: 2%;
     border-radius: 10px;
     background-color: #0077B5;
     transition: transform 0.2s ease-in-out;
@@ -47,9 +47,23 @@
     font-size: 30px;
     color: white;
     padding: 1% 2%;
-    margin-left: 6%;
+    margin: 2%;
     border-radius: 10px;
     background: linear-gradient(45deg, #FCAF45, #833AB4);
     border: 1px solid white;
     transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .whatsappIcon {
+        padding: 1% 3%;
+    }
+
+    .linkedinIcon {
+        padding: 1% 3%;
+    }
+
+    .instagramIcon {
+        padding: 1% 3%;
+    }
 }

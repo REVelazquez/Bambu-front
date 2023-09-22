@@ -103,7 +103,7 @@ const About = () => {
 
         <div
           key="Cards Container"
-          className="lg:grid lg:grid-cols-2 sm:w-4/5  animate__animated animate__fadeIn"
+          className="lg:grid lg:grid-cols-2 sm:w-5/5  animate__animated animate__fadeIn"
         >
           {items?.map((item) => {
             return (
@@ -119,7 +119,7 @@ const About = () => {
       </div>
       {/* container equipo de */}
       <div key="Container equipo" className="mt-12 md:mt-36 md:mb-10">
-        <h1 className="font-semibold text-green-900 text-3xl text-center w-90">
+        <h1 className='font-bold mb-4 mt-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down'>
           {texts.tittle5}
         </h1>
         <div className='flex flex-col md:flex-row p-1 md:p-2'>

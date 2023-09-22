@@ -8,6 +8,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import AcordeonValores from "../Components/AcordeonValores/AcordeonValores";
+import style from './index.module.css';
 
 const About = () => {
   return (
@@ -89,8 +90,6 @@ const About = () => {
         <AcordeonValores />
       </div>
 
-
-
       {/* Container para lo que hace destacar a Bambú */}
       <div
         key="Container destacar"
@@ -119,63 +118,43 @@ const About = () => {
           })}
         </div>
       </div>
-
-
       {/* container equipo de */}
-      {/* <div key="Container equipo" className="mt-6">
+      <div key="Container equipo" className="mt-6">
         <h1 className="font-semibold text-green-900 text-3xl text-center w-90">
           {texts.tittle5}
         </h1>
-        <div className="flex flex-row m-0">
-          <div className="place-items-center bg-green-500 m-4 w-44 h-44 rounded-xl border-8 border-green-800">
-            <div key="container equipo 1" className="ml-6 flex flex-row">
-              <h1 className="mt-3 font-bold">Daniel Kübl</h1>
-              <a
-                href="https://www.linkedin.com/in/daniel-k%C3%BCbl-418a58180/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="flex flex-row ml-2">
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    style={{ width: "1.25em", marginTop: ".55em" }}
-                    className="hover:text-white"
-                  />
+        <div className="flex flex-col md:flex-row m-5 space-y-5 md:space-y-0 md:space-x-5">
+          <div className={`${style.card} w-full md:w-1/2 lg:w-1/3`}>
+            <div className={style.img_container}>
+        <div className={style.img}>
+          <Image src={imageDaniel} alt=""/>
+        </div>
+        <div className={`${style.description} ${style.card}`}>
+            <span className={style.title}>
+            Daniel Kübl
+            </span>
+        </div>
+    </div>
+</div>
+<div className={`${style.card} w-full md:w-1/2 lg:w-1/3`}>
+            <div className={style.img_container}>
+              <div className={style.img}>
+                <Image
+                src={imageGabo}
+                alt=""
+                />
                 </div>
-              </a>
-            </div>
-            <Image src={imageDaniel} className="w-32 h-28 ml-6" alt="" />
-          </div>
-
-          <div className="place-items-center bg-green-500 w-44 h-44 mt-4 rounded-xl border-8 border-green-800">
-            <div key="container equipo 2" className="ml-2 flex flex-row">
-              <h1 className=" mt-3  font-bold">Gabriel Heredia</h1>
-              <button className="mt-2">
-                <a
-                  href="https://www.linkedin.com/in/gaboheredia/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="flex flex-row ml-2">
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      style={{ width: "1.25em", marginTop: "0.125" }}
-                      className="hover:text-white"
-                    />
+                <div className={`${style.description} ${style.card}`}>
+                  <span className={style.title}>
+                    Daniel Kübl
+                    </span>
                   </div>
-                </a>
-              </button>
+                </div>
+              </div>
             </div>
-            <Image
-              src={imageGabo}
-              className="w-28 h-28 ml-8 mb-0 mt-0"
-              alt=""
-            />
           </div>
         </div>
-      </div> */}
-    </div>
-  );
-};
+       );
+    };
 
 export default About;

@@ -70,9 +70,9 @@ function TestimoniosCarousel() {
                 showArrows={true}
                 showStatus={false}
                 transitionTime={1000}
-                swipeable={true}
+                swipeable={window.innerWidth > 768}
                 dynamicHeight={false}
-                emulateTouch={true}
+                emulateTouch={window.innerWidth > 768}
             >
                 {testimonios.map((testimonio, index) => (
                     <div

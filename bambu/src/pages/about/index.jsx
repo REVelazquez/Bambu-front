@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { texts, items } from "../../../public/Assets/about/aboutText";
 import Card from "../Components/CardsAbout/Card";
 import imageDaniel from "../../../public/Assets/about/DanielKubl.jpeg";
@@ -10,6 +10,19 @@ import AcordeonValores from "../Components/AcordeonValores/AcordeonValores";
 import style from './index.module.css';
 
 const About = () => {
+
+  const [mostrarRedesSocialesDani, setMostrarRedesSocialesDani] = useState(false);
+  const [mostrarRedesSocialesGabo, setMostrarRedesSocialesGabo] = useState(false);
+
+  const toggleRedesSocialesDani = () => {
+    setMostrarRedesSocialesDani(!mostrarRedesSocialesDani);
+  };
+
+  const toggleRedesSocialesGabo = () => {
+    setMostrarRedesSocialesGabo(!mostrarRedesSocialesGabo);
+  };
+
+
   return (
     <div key='Container A' className=' flex flex-col place-items-center w-full m-auto h-full' style={{ backgroundColor: '#F2EDDC' }} >
       <h1 className='font-bold mt-28 mb-12 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down' >{texts.tittle1}</h1>
@@ -118,51 +131,87 @@ const About = () => {
         </div>
       </div>
       {/* container equipo de */}
-      <div key="Container equipo" className="mt-12 md:mt-36 md:mb-10">
-        <h1 className='font-bold mb-4 mt-4 text-4xl text-center md:text-4xl md:text-4xl sm:text-3xl text-green-800 animate-fade-down'>
-          {texts.tittle5}
-        </h1>
+      <div key="Container equipo" className="mt-12 md:mt-36 md:mb-36">
         <div className='flex flex-col md:flex-row p-1 md:p-2'>
-          <Link href="https://www.linkedin.com/in/daniel-k%C3%BCbl-418a58180/">
-            <div className="flex-1 text-center p-4 lg:m-10 cursor-pointer">
-              <div className={`${style.card} w-full max-w-md md:max-w-none mx-auto`}>
-                <div className={style.img_container}>
-                  <div className={style.img}>
-                    <Image src={imageDaniel} alt="" />
-                  </div>
-                  <div className={`${style.description} ${style.card} text-center`}>
-                    <span className={style.title}>
-                      Daniel Kübl
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
+          <div className="flex-1 text-center p-4 lg:m-10 " >
+            <div className={`${style.card} w-full max-w-md md:max-w-none mx-auto`}>
+              <div className={style.img_container}>
 
-          <Link href="https://www.linkedin.com/in/gaboheredia/">
-            <div className="flex-1 text-center p-4 lg:m-10 cursor-pointer">
-              <div className={`${style.card} w-full max-w-md md:max-w-none mx-auto`}>
-                <div className={style.img_container}>
-                  <div className={style.img}>
-                    <Image
-                      src={imageGabo}
-                      alt=""
-                    />
-                  </div>
-                  <div className={`${style.description} ${style.card} text-center`}>
-                    <span className={style.title}>
-                      Gabriel Heredia
-                    </span>
-                  </div>
+                <div className={style.img}>
+                  <Image src={imageDaniel} alt="" />
+                </div>
+                <div className={`${style.description} ${style.card} text-center cursor-pointer hover:ring-green-600 hover:ring-2 duration-400 `} onClick={toggleRedesSocialesDani}>
+                  <span className={style.title}>
+                    Daniel Kübl
+                  </span>
+                  <p className="text-black font-semibold ">Co-fundador</p>
+
+                </div>
+
+              </div>
+            </div>
+            {mostrarRedesSocialesDani && (
+              <div className={`animate-fade-down ${style.redes}`} >
+                <a
+                  href="https://www.linkedin.com/in/daniel-k%C3%BCbl-418a58180/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={style.linkedin}
+                >
+                  <i className="fab fa-linkedin transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={style.instagramIcon}
+                >
+                  <i className="fab fa-instagram transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
+                </a>
+              </div>
+
+            )}
+          </div>
+
+          <div className="flex-1 text-center p-4 lg:m-10 " >
+            <div className={`${style.card} w-full max-w-md md:max-w-none mx-auto`}>
+              <div className={style.img_container}>
+                <div className={style.img}>
+                  <Image
+                    src={imageGabo}
+                    alt=""
+                  />
+                </div>
+                <div className={`${style.description} ${style.card} text-center cursor-pointer hover:ring-green-600 hover:ring-2 duration-400 `} onClick={toggleRedesSocialesGabo}>
+                  <span className={style.title}>
+                    Gabriel Heredia
+                  </span>
+                  <p className="text-black font-semibold ">Co-fundador</p>
                 </div>
               </div>
             </div>
-          </Link>
+            {mostrarRedesSocialesGabo && (
+              <div className={`animate-fade-down ${style.redes}`} >
+                <a href="https://www.linkedin.com/in/gaboheredia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={style.linkedin}
+                >
+                  <i className="fab fa-linkedin transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
+                </a>
+                <a href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={style.instagramIcon}>
+                  <i className="fab fa-instagram transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
+                </a>
+              </div>
+            )}
+          </div>
         </div>
-
       </div>
-    </div>
+
+    </div >
   );
 };
 

@@ -9,6 +9,30 @@
   animation-fill-mode: both;
 }
 
+/* Estilos de Tailwind CSS */
+.custom-animation-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.custom-animation-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.custom-animation-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.custom-animation-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: #F2EDDC;

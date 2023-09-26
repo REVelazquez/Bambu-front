@@ -54,9 +54,8 @@ const Mentoring = () => {
           ¿Interesado en nuestros servicios?
         </h1>
         <div className="inline-block mb-8 lg:mb-32">
-          <a href="https://api.whatsapp.com/send?phone=3516578866" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-sky-600 text-md font-medium text-white uppercase border-2 border-sky-600 rounded-full hover:bg-white hover:text-sky-600 hover:border-sky-600 hover:shadow-md transition duration-150 ease-in-out">
-            Escríbenos para obtener más información
-            <i className="fab fa-whatsapp ml-2 text-xl"></i>
+          <a href="/Contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+            ¡Contáctanos para obtener más información!
           </a>
         </div>
       </div>

@@ -64,7 +64,7 @@ const Herramientas = () => {
         <h1 className="mb-8 text-xl lg:text-2xl font-bold mt-10">
           ¿Quieres descubrir más herramientas para aumentar tu productividad?
         </h1>
-        <a href="/Contacto/contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
+        <a href="/Contacto" className="text-white text-md bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out inline-block mb-5">
           ¡Contáctanos para obtener más información!
         </a>
       </div>

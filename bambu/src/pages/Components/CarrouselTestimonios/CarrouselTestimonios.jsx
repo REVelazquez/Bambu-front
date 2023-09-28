@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import { useRouter } from 'next/router';
 import { images } from '../../../../public/Assets/Testimonios';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
@@ -47,7 +46,6 @@ const testimonios = [
 
 
 function TestimoniosCarousel() {
-    const router= useRouter()
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
@@ -57,27 +55,6 @@ function TestimoniosCarousel() {
 
         return () => clearInterval(interval);
     }, []);
-
-    const [windowWidth, setWindowWidth] = useState(
-        typeof window !== 'undefined' ? window.innerWidth : 1920
-         // Establece un valor predeterminado
-      );
-      
-      useEffect(() => {
-        // Actualiza el ancho de la ventana cuando el tamaño de la ventana cambia
-        const handleResize = () => {
-          setWindowWidth(window.innerWidth);
-        };
-      
-        // Agrega un event listener para el evento de cambio de tamaño de ventana
-        window.addEventListener('resize', handleResize);
-      
-        // Elimina el event listener cuando el componente se desmonta
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
-      
 
     return (
         <div className='flex justify-center h-full'>
@@ -93,9 +70,9 @@ function TestimoniosCarousel() {
                 showArrows={true}
                 showStatus={false}
                 transitionTime={1000}
+                swipeable={window.innerWidth > 768}
                 dynamicHeight={false}
-                swipeable={windowWidth > 768}
-                emulateTouch={windowWidth > 768}
+                emulateTouch={window.innerWidth > 768}
             >
                 {testimonios.map((testimonio, index) => (
                     <div

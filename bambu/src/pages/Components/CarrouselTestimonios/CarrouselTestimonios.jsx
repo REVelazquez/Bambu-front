@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { images } from '../../../../public/Assets/Testimonios';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
-import styles from './CarrouselTesti.module.css'
+import styles from './CarrouselTestimonios.module.css'
 
 const testimonios = [
     {
@@ -70,9 +70,9 @@ function TestimoniosCarousel() {
                 showArrows={true}
                 showStatus={false}
                 transitionTime={1000}
-                swipeable={window.innerWidth > 768}
+                swipeable={true}
                 dynamicHeight={false}
-                emulateTouch={window.innerWidth > 768}
+                emulateTouch={true}
             >
                 {testimonios.map((testimonio, index) => (
                     <div

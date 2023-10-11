@@ -16,3 +16,15 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    .section {
+        width: 680px;
+        height: 600px;
+    }
+
+    .comentario {
+        font-size: 20px;
+    }
+
+}

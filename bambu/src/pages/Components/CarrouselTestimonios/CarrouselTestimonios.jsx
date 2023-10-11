@@ -70,14 +70,13 @@ function TestimoniosCarousel() {
                 showArrows={true}
                 showStatus={false}
                 transitionTime={1000}
-                swipeable={true}
+                swipeable={false}
                 dynamicHeight={false}
-                emulateTouch={true}
             >
                 {testimonios.map((testimonio, index) => (
                     <div
                         key={index}
-                        className="p-4 flex flex-col items-center justify-center cursor-grab"
+                        className="p-4 flex flex-col items-center justify-center"
                     >
                         <div className="relative h-48 w-48 mb-4">
                             <Image

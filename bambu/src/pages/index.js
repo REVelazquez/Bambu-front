@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <main className="flex flex-col items-center justify-center p-2 h-full">
-      <div className="flex flex-col sm:w-3/5 sm:flex-row rounded-lg ml-2 sm:ml-10 mt-40 mb-40 items-center justify-center">
+      <div className="flex flex-col w-full xl:w-3/5 sm:flex-row p-2 rounded-lg mt-20 items-center">
         {/* Imagen visible solo en dispositivos móviles */}
         <div className="w-full sm:hidden mx-auto">
           <div style={{
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full sm:w-1/2 px-4 sm:px-0 mt-6 text-center xl:text-left mx-auto">
+        <div className="w-full sm:w-1/2 px-4 sm:px-0 mt-6 text-center xl:text-left md:text-left mx-auto">
           <h1 className="font-extrabold text-6xl sm:text-7xl mb-5 text-green-700 ">BAMBÚ</h1>
           <p className="text-gray-700 mb-6 text-lg sm:text-xl text-black font-bold text-green-700 ">
             ¡Te ayudamos a transformar tu emprendimiento!

@@ -80,7 +80,7 @@ const Home = () => {
               position: 'absolute',
               top: '0',
               left: '0',
-              width: '120%',
+              width: '100%',
               height: '100%',
               borderRadius: '50%',
               borderTopLeftRadius: '55%',

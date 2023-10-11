@@ -16,6 +16,9 @@ const About = () => {
 
   const toggleRedesSocialesDani = () => {
     setMostrarRedesSocialesDani(!mostrarRedesSocialesDani);
+    if (!mostrarRedesSocialesDani) {
+
+    }
   };
 
   const toggleRedesSocialesGabo = () => {
@@ -160,14 +163,6 @@ const About = () => {
                 >
                   <i className="fab fa-linkedin transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
                 </a>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={style.instagramIcon}
-                >
-                  <i className="fab fa-instagram transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
-                </a>
               </div>
 
             )}
@@ -198,12 +193,6 @@ const About = () => {
                   className={style.linkedin}
                 >
                   <i className="fab fa-linkedin transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
-                </a>
-                <a href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={style.instagramIcon}>
-                  <i className="fab fa-instagram transform transition-transform hover:translate-y-[-5px] duration-300 ease-out"></i>
                 </a>
               </div>
             )}

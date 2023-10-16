@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import Link from "next/link";
 
 const Contacto = () => {
-  const [state, handleSubmit] = useForm("mvojgaqr"); // xjvqrvwq
+  const [state, handleSubmit] = useForm("xjvqrvwq"); // mvojgaqr
   if (state.succeeded) {
     return (
       <div className="flex flex-col h-full">
